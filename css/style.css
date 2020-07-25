@@ -1,0 +1,228 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .site-wrap {
+        overflow: scroll;
+        height: 100vh; 
+        scroll-snap-type: mandatory; /* Firefox */  
+        scroll-snap-type: y mandatory;/* Chrome Canary */ 
+        -ms-scroll-snap-type: mandatory; /* IE/Edge */  
+        -webkit-scroll-snap-type: mandatory; /* Safari */ 
+        -webkit-scroll-snap-destination: 50% 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    section {
+        padding-top: 50px; 
+        height: 98vh;
+        overflow-y: hidden;
+        scroll-snap-align: start;
+        -ms-scroll-snap-align: start;
+        scroll-snap-coordinate: 0% 0%; /* older (Firefox/IE) */  
+        -webkit-scroll-snap-coordinate: 50% 50%; /* older (Safari) */ 
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding-top: 4em; 
+        padding-bottom: 4em; 
+        /* min-height: 100vh;/ */
+    }
+}
+
+section > .container, section > .container-fluid {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column; }
+    @media (min-width: 768px) {
+        section > .container, section > .container-fluid {
+            height: 100%;
+        }
+    }
+
+#intro-section p {
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+
+#team-intro, #volunteer-section, #impact-section {
+    background-color: #f2f2f2;
+}
+
+@media (min-width: 768px) {
+    #team-intro {
+        min-width: 50%;
+        position: absolute;
+        right: 0;
+    }
+}
+@media (max-width: 768px) {
+    #team-intro {
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -30vh;
+    }
+}
+
+#programs-intro {
+    background-color: white; }
+    @media (min-width: 768px) {
+        #programs-intro {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    @media (max-width: 768px) {
+        #programs-intro {
+            max-width: 540px;
+            margin-left: auto;
+            margin-right: auto;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+#volunteer-section .col-md-4 {
+    padding: 15px; 
+}
+
+#impact-counter {
+    background-color: white;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    padding: 1.5em;
+}
+
+#impact-counter .row {
+    justify-content: space-between; }
+    @media (max-width: 768px) {
+        #impact-counter .row {
+            justify-content: center;
+        }
+    }
+
+#impact-counter .number {
+    color: #2f80ed;
+    font-size: 2em;
+    text-align: right;
+    width: 2em;
+    padding-right: 5px;
+    display: inline-block;
+}
+
+#impact-counter .caption {
+    font-size: 1.3em;
+}
+
+#footer-section {
+    background-color: #4f4f4f;
+    min-height: fit-content;
+}
+
+#footer-section > .container {
+    height: inherit;
+}
+
+#footer-section * {
+    color: #f2f2f2 !important;
+}
+
+#footer-section .border-bottom {
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 1.4em;
+    margin-bottom: 1em;
+}
+
+#footer-section .col-sm-12 {
+    margin-bottom: 1em;
+}
+
+#footer-section .nav-link {
+    padding: 0 1rem
+}
+
+h1, h2 {
+    margin-bottom: 1em;
+}
+
+p {
+    line-height: 1.7em;
+}
+
+.card {
+    position: relative;
+}
+
+.card-title, .center {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-label {
+    position: absolute;
+    color: white;
+    background-color: #f2994a;
+    top: 1em;
+    left: -1em;
+    padding: 3px 10px;
+}
+
+.full-width {
+    min-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.full-width > .col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.btn-row {    
+    display: flex; 
+    justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    margin: 40px;
+}
+
+/* Edge only */  
+@supports (-ms-accelerator: true) {
+    .btn-row {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-clip-70 {
+        max-height: 70vh;
+        overflow-y: hidden;
+    }
+}
+
+img.fit, .footer-logo img {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+img.icon {
+    height: 1em;
+    padding-right: 0.6em;
+}
