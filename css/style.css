@@ -8,7 +8,7 @@ html {
 
 @media (min-width: 768px) {
     .site-wrap {
-        overflow: scroll;
+        overflow-y: scroll;
         height: 100vh; 
         scroll-snap-type: mandatory; /* Firefox */  
         scroll-snap-type: y mandatory;/* Chrome Canary */ 
@@ -21,7 +21,7 @@ html {
 @media (min-width: 768px) {
     section {
         padding-top: 50px; 
-        height: 98vh;
+        height: 100vh;
         overflow-y: hidden;
         scroll-snap-align: start;
         -ms-scroll-snap-align: start;
@@ -56,6 +56,13 @@ section > .container, section > .container-fluid {
 #slider-section > .container-fluid {
     padding-left: 0;
     padding-right: 0;
+}
+
+#slider-section .carousel, 
+#slider-section .carousel-inner, 
+#slider-section .carousel-item, 
+#slider-section .carousel img {
+    height: 100%;
 }
 
 #intro-section p {
