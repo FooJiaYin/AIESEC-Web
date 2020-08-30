@@ -41,6 +41,18 @@ h4 {
     font-weight: bold;
 }
 
+dark-gray {
+    color: #4f4f4f;
+}
+
+blue {
+    color: #037df2;
+}
+
+orange {
+    color: #f58a24;
+}
+
 .card {
     position: relative;
 }
@@ -48,6 +60,7 @@ h4 {
 .card-body {
     padding: 0.75rem;
     font-size: 1.5rem;
+    border: 1px solid #2F80ED;
 }
 
 .card-body p {
@@ -58,6 +71,14 @@ h4 {
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+
+.left {
+    text-align: left !important;
+}
+
+.right {
+    text-align: right !important;
 }
 
 .img-label {
@@ -81,6 +102,19 @@ h4 {
     padding-right: 0;
 }
 
+.full-height {
+    height: 100vh;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .w-60 {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .btn-row {    
     display: flex; 
     justify-content: center;
@@ -91,12 +125,19 @@ h4 {
 
 .btn {
     margin: 0 2em;
-    width: 8em;
+    min-width: 8em;
     /* padding-left: 1.5em;
     padding-right: 1.5em; */
     font-size: inherit;
     border-radius: 0 !important;
-    box-shadow: -1px 3px 3px #aaa;
+}
+
+.btn * {
+    line-height: 1em !important;
+}
+
+.shadow {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .btn-outline-primary {
@@ -105,7 +146,6 @@ h4 {
 }
 
 .btn-link {
-    box-shadow: none !important;
     font-weight: 500;
     width: inherit;
 }
@@ -165,10 +205,24 @@ img.icon {
     margin-bottom: 2em;
 }
 
+#home-section .fit {
+    height: 100%;
+    width: 100%;
+}
+
+#home-section .btn-row {
+    position: absolute;
+    bottom: 2em;
+}
+
+.feature {
+
+}
+
 #footer-section {
     background-color: #4f4f4f;
     min-height: fit-content;
-    font-size: 1.5rem;
+    margin-bottom: 0 !important;
 }
 
 #footer-section > .container {
@@ -177,6 +231,10 @@ img.icon {
 
 #footer-section * {
     color: #f2f2f2 !important;
+}
+
+#footer-section h4 {
+    font-weight: normal;
 }
 
 #footer-section .border-bottom {

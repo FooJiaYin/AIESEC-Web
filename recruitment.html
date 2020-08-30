@@ -1,0 +1,569 @@
+<html>
+<head>
+	<title>AIESEC</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/svg+xml" href="img/icon.svg">
+	<link rel="alternate icon" href="img/icon.ico">
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+
+		</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+
+		</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+
+		</script>	
+
+	<style>
+		section {
+			margin-top: 5rem;
+			margin-bottom: 7rem;
+		}
+
+		section h1 {
+			margin-left: auto;
+			margin-right: auto;
+			background: url("img/“.svg");
+			background-repeat: no-repeat;
+			background-position: top left;
+		}
+
+		@media (min-width: 768px) {
+			section h1 {
+				width: 60%;
+			}
+		}
+
+		section p {
+			font-size: 1.5rem;
+			line-height: 1.3em;
+			margin-bottom: 1em;
+		}
+
+		#home-section {
+			margin-top: 0 !important;
+		}
+
+		#definition-section .col {
+			padding-left: 1.5em;
+			padding-right: 1.5rem;
+		}
+
+		#definition-section h2 {
+			font-weight: bold;
+			margin-bottom: 0.5em;
+			line-height: 1em !important;
+		}
+
+		#definition-section .gray {
+			color: #4f4f4f;
+		}
+
+		.block-table * {
+			line-height: 1.7em;
+			color: #4f4f4f;
+		}
+
+		.block-table h3 {
+			font-weight: bold;
+			margin-bottom: 1em;
+		}
+
+		.block-table p {
+			font-size: 1.125rem;
+		}
+
+		@media (min-width: 768px) {
+			.block-table .sq {
+				height: 260px;
+				width: 260px;
+			}
+		}	
+
+		.block-table .col, .block-table .col-8 {
+			background-color: #c9ccd1;
+			margin: 0.75rem;
+			padding: 1em;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}	
+
+		.bg-yellow {
+			background-color: #fad149 !important;
+		}
+
+		.bg-orange *, .bg-dark-gray * {
+			color: white !important;
+		}		
+
+		.bg-orange {
+			background-color: #f58a24 !important;
+		}		
+
+		.bg-dark-gray {
+			background-color: #4f4f4f !important;
+		}
+
+		#you-will .container {
+			position: relative;
+			width: 770px;
+		}
+		#you-will .sq {
+			position: absolute;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		#you-will .sq * {
+			margin-bottom: 0;
+			line-height: 3em;
+			width: 270px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#you-will h2 {
+			font-weight: bold;
+		}
+		#you-will-1 {
+			width: 335px;
+			height: 335px;
+			left: 0px;
+			top: 0px;
+			border: 3px solid rgba(3, 125, 242, 0.7);
+		}
+		#you-will-2 {
+			width: 330px;
+			height: 330px;
+			left: 370px;
+			top: 70px;
+			border: 3px solid #FAD149;
+		}
+		#you-will-3 {
+			width: 381px;
+			height: 381px;
+			left: 46px;
+			top: 287px;
+			border: 3px solid #F58A24;
+		}
+		#you-will-4 {
+			width: 320px;
+			height: 300px;
+			left: 450px;
+			top: 368px;
+			border: 3px solid #30C29E;
+		}
+		
+		#department .row {
+			/* max-width: 90%; */
+			margin: auto;
+		}
+		#department .col {
+			margin: 1rem 1.75rem;
+			padding: 5px;
+		}
+		#department h5 {
+			font-size: 1.5rem;
+			padding-top: 0.5em;
+			height: 3em;
+			font-weight: bold;
+			color: white !important;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		h5#department-1 {
+			background-image: url("img/title-deco-1.png");
+		}
+		h5#department-2 {
+			background-image: url("img/title-deco-2.png");
+		}
+		h5#department-3 {
+			background-image: url("img/title-deco-3.png");
+		}
+		h5#department-4 {
+			background-image: url("img/title-deco-4.png");
+		}
+		h5#department-5 {
+			background-image: url("img/title-deco-5.png");
+		}
+		h5#department-6 {
+			background-image: url("img/title-deco-6.png");
+		}
+		#department p {
+			font-size: 1.125rem;
+			font-weight: bold;
+			line-height: 1.5em;
+			text-align: left;
+			padding: 1.5em;
+			margin-bottom: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- NAVBAR -->
+	<header>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light transparent">
+			<div class="container">
+				<a class="navbar-brand" href="index.html#"><img src="img/icon.png" class="icon"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav justify-content-around">
+						<li class="nav-item" id="">
+							<a class="nav-link" href="volunteer.html">海外成長</a>
+						</li>
+						<li class="nav-item" id="">
+							<a class="nav-link" href="internship.html">海外實習</a>
+						</li>
+						<li class="nav-item" id="">
+							<a class="nav-link" href="local.html">在地活動</a>
+						</li>
+						<li class="nav-item" id="">
+							<a class="nav-link" href="partnership.html">成為合作夥伴</a>
+						</li>
+						<li class="nav-item" id="">
+							<a class="nav-link" href="recruitment.html">加入我們</a>
+						</li>
+						<li class="nav-item" id="">
+							<a class="nav-link" href="about.html">關於我們</a>
+						</li>
+						<li class="nav-item" id="">
+							<a class="nav-link" href=""><img src="img/facebook-icon.png" class="icon mt-1"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</nav>
+	</header>
+
+	<div class="site-wrap">
+		<!-- HOME -->
+		<section id="home-section">
+			<div class="container full-width full-height">
+				<img class="fit" src="img/example-1.jpg">
+					<div class="row btn-row w-100">
+						<button class="btn btn-light btn-outline-primary" href="volunteer.html#projects"><h4>報名說明會</h4></button>
+						<button class="btn btn-primary"><h4>加入我們</h4></button>
+					</div>
+			</div>
+		</section>
+
+		<!-- INTRO -->
+		<section id="definition-section">
+			<div class="container w-60">
+				<div class="row">
+					<div class="col col-auto border-right">
+						<h2>AIESEC</h2>
+						<h2><dark-gray>/aɪˈsek/</dark-gray></h2>
+					</div>
+					<div class="col">
+						<h2><i>We care about <blue>Youth</blue> <orange>& LEADERSHIP. </orange></i></h2>
+						<p>全球最大由17-30歲青年運營的非營利組織，成立於 1948 年，<br>
+							透過促進跨文化交流，培養領導力的四大要素：<br>
+							世界觀、問題解決能力、能激勵他人，更認識自己。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="center">
+			<h1>在 AIESEC，我們培養 #領導力</h1>
+			<p>在任何社團，皆有可能帶領團隊，<br>
+				但在 AIESEC，<br>
+				我們立志讓自己成為能凝聚他人、溫柔堅定、有信念的領導者。</p>
+				
+			<p>透過部門專案執行、團隊領導經驗、將目光放眼世界，<br>
+				我們培養接軌社會的商管職能，也為關注的社會議題付出行動；</p>
+				
+			<p>我們期許自己，<br>
+				因為用力實踐，努力成長，而有影響力。</p>
+		</section>
+
+		<section class="center">
+			<h1>在 AIESEC，我們實際運作</h1>
+			<h2>海外成長與海外實習，<br>
+				我們媒合志工與實習生，激發彼此從經驗中成長。</h2>				
+				
+			<p>我們讓台灣青年走向世界，<br>h3
+				從擔任志工或實習生的經驗中反思成長，在異環境的文化碰撞中學習包容理解，<br>
+				也讓外國人從他們身上認識台灣。</p>
+				
+			<p>我們讓外國青年來到台灣，<br>
+				到企業、社區、非營利組織、國中小學中擔任志工或實習生，<br>
+				在回饋社會的過程中，也為台灣的教育氛圍、公司文化注入更多元的活力。</p>
+
+			<div class="w-60"><img class="fit" src="img/recruitment-1.png"></div>
+		</section>
+
+		<section class="center">
+			<h1>我們在尋找這樣的你</h1>
+			<div class="w-60 block-table">
+				<div class="row">
+					<div class="col sq center">
+						<h3>樂於團隊合作</h3>
+						<p>團隊是我們的單位，<br>
+							你不會落單。</p>
+					</div>
+					<div class="col sq center bg-yellow">
+						<h3>主動學習</h3>
+						<p>在這裡不怕沒東西學，<br>
+							就怕你不想學。</p>
+					</div>
+					<div class="col sq center">
+						<h3>在乎人與社會</h3>
+						<p>我們關心身邊的夥伴，<br>
+							也在乎社會上發生的事情。</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col sq center bg-yellow">
+						<h3>摸索未來方向中</h3>
+						<p>把握機會多方嘗試，<br>
+							無論向著何方，都是前進。</p>
+					</div>
+					<div class="col sq center">
+						<h3>不安於現狀</h3>
+						<p>想挑戰自己？<br>
+							恭喜你找對地方了。</p>
+					</div>
+					<div class="col sq center bg-yellow">
+						<h3>付諸行動</h3>
+						<p>與其抱怨，<br>
+							不如帶來改變。</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col center bg-orange">
+						<h3 class="mb-0">變得<br>
+							# 無懼而有為</h3>
+					</div>
+					<div class="col-8 center bg-dark-gray">
+						<p>不斷嘗試，因未知而生的恐懼就會減少；<br>
+							在不斷嘗試的旅程中，我們實踐、我們挫敗、我們成長；</p>							
+						<p><strong>成長，是因為我們曾經恐懼，是為了成為無懼而有為的人。</strong></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="center full-height" id="you-will">			
+			<h1>在 AIESEC，#你會</h1>
+			<div class="container justify-content-center">
+				<div class="sq" id="you-will-1">
+					<p class="left">擁有</p>
+					<h2>緊密連結的<br>
+						夥伴</h2>
+					<p class="right">跟完整規劃的團隊經驗</p>
+				</div>
+				<div class="sq" id="you-will-2">
+					<p class="left">體驗可以</p>
+					<h2>充分發揮的<br>
+						實務運作</h2>
+					<p class="right">打造行銷力與企劃力</p>
+				</div>
+				<div class="sq" id="you-will-3">
+					<p class="left">經歷</p>
+					<h2>經驗式<br>
+						領導力培訓</h2>
+					<p class="right">讓你兼具軟硬實力</p>
+				</div>
+				<div class="sq" id="you-will-4">
+					<p class="left">有機會參加</p>
+					<h2>跨國會議<br>
+						與活動</h2>
+					<p class="right">讓你的舞台接軌世界</p>
+				</div>	
+			</div>		
+		</section>
+
+		<section class="center full-height" id="department">	
+			<h1>AIESEC 的部門，#你想加入哪個團隊</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col shadow">
+						<h5 id="department-1">海外成長</h5>
+						<p>我們是夢想與影響力的推手。
+							每年寒暑假送出幾百位台灣大學生，<br>
+							踏上志工與自我探索的旅程，<br>
+							將關懷散播到世界角落。</p>
+					</div>
+					<div class="col shadow">
+						<h5 id="department-2">海外實習</h5>
+						<p>生在小小的島，但我們活在大大的世界。<br>
+							我們負責讓台灣青年可以透過海外實習，<br>
+							步入職場、跨足國際。</p>
+					</div>
+					<div class="col shadow">
+						<h5 id="department-3">行銷</h5>
+						<p>我們在校園市場裡推廣 AIESEC、海外成長與海外實習，<br>
+							讓更多人因為參與 AIESEC 而擁有無可取代的成長經歷。</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col shadow">
+						<h5 id="department-4">全球人才實習</h5>
+						<p>我們負責媒合外國青年來台灣實習，<br>
+							讓他們訓練能力的同時，<br>
+							也為我們即將投入的台灣職場帶入更多元的文化。</p>
+					</div>
+					<div class="col shadow">
+						<h5 id="department-5">全球青年在地發展</h5>
+						<p>我們連結來自各國的青年<br>
+							一起投入台灣的社會議題，<br>
+							諸如偏鄉教育、社區營造。<br>
+							與全台近百間中小學合作、<br>
+							帶給小孩更多的國際資源。</p>
+					</div>
+					<div class="col shadow">
+						<h5 id="department-6">人才管理</h5>
+						<p>每個校園分會都有數十位成員，我們負責規劃社課、<br>
+							關心每個成員的參與與體驗，<br>
+							幹部培訓與徵選。<br>
+							新成員一學期後可申請加入。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="footer-section">
+			<div class="container py-4">
+				<h4>AIESEC 台灣 近期合作夥伴</h4>
+				<div class="row border-bottom">
+					<div class="col footer-logo my-auto">
+						<img src="img/partner-logo-pwc.png">
+					</div>
+					<div class="col footer-logo my-auto">
+						<img src="img/partner-logo-TATA.png">
+					</div>
+					<div class="col footer-logo my-auto">
+						<img src="img/partner-logo-ADB.png">
+					</div>
+					<div class="col footer-logo my-auto">
+						<img src="img/partner-logo-UN.png">
+					</div>
+					<div class="col footer-logo my-auto">
+						<img src="img/partner-logo-DHL.png">
+					</div>
+				</div>
+				<div class="d-flex center pb-5" id="footer-navbar">
+					<ul class="nav py-2 center">
+						<li class="nav-item border-right" id="">
+							<a class="nav-link" href="volunteer.html">海外成長</a>
+						</li>
+						<li class="nav-item border-right" id="">
+							<a class="nav-link" href="internship.html">海外實習</a>
+						</li>
+						<li class="nav-item border-right" id="">
+							<a class="nav-link" href="local.html">在地活動</a>
+						</li>
+						<li class="nav-item" id="">
+							<a class="nav-link" href="partnership.html">成為合作夥伴</a>
+						</li>
+						<li class="nav-item border-right" id="">
+							<a class="nav-link" href="recruitment.html">加入我們</a>
+						</li>
+						<li class="nav-item border-right" id="">
+							<a class="nav-link" href="about.html">關於我們</a>
+						</li>
+					</ul>
+				</div>
+				<p>有任何需要，歡迎聯絡我們</p>
+				<div class="row border-bottom">
+					<div class="col col-auto align-self-end">
+						<div>週一至週五<br>上午 9:30 至下午 6:00</div>
+						<div><img class="icon" src="img/contact-location.png">新北市板橋區莒光路52號之一</div>
+					</div>
+					<div class="col col-auto align-self-end">
+						<div><img class="icon" src="img/contact-email.png">taiwan@aiesec.net</div>
+						<div><img class="icon" src="img/contact-phone.png">02-2256 2380</div>
+					</div>
+					<div class="col align-self-end">
+						<div class="text-right"><img class="icon" src="img/contact-facebook.png"><img class="icon" src="img/contact-messenger.png"></div>
+					</div>
+				</div>
+				<p class="text-right small">Copyright © 2020 AIESEC in Taiwan MC</p>
+			</div>
+		</section>
+	</div>
+	
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+	<script>
+		/*$(window).scroll(function () {
+			var height = $(window).scrollTop();
+			if (height > 0) {
+				$(".bg-light").removeClass("transparent");
+			} else {
+				$(".bg-light").addClass("transparent");
+			}
+			if (height+100 > $("#faq-section").offset().top){
+				$("header .nav-item").removeClass("active");
+				$("#faq-link").addClass("active");
+			}
+			else if (height+100 > $("#pricing-section").offset().top){
+				$("header .nav-item").removeClass("active");
+				$("#pricing-link").addClass("active");
+			}
+			else if (height+100 > $("#course-section").offset().top){
+				$("header .nav-item").removeClass("active");
+				$("#course-link").addClass("active");
+			}
+			else if (height+100 > $("#intro-section").offset().top){
+				$("header .nav-item").removeClass("active");
+				$("#intro-link").addClass("active");
+			}
+			else {
+				$("header .nav-item").removeClass("active");
+			}
+		});*/	
+		var counterInit = function() {
+			if ( $('#impact-counter').length > 0 ) {
+				$('#impact-counter').waypoint( function( direction ) {
+					if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
+						var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
+						$('.number').each(function(){
+							var $this = $(this),
+								num = $this.data('number');
+								console.log(num);
+							$this.animateNumber(
+								{
+								number: num,
+								numberStep: comma_separator_number_step
+								}, 7000
+							);
+						});				
+					}
+				} , { offset: '95%' } );
+			}
+		}	
+		const observer = new IntersectionObserver(entries => {
+			entries.forEach(elem => {
+				if (elem.isIntersecting) {
+					counterInit();
+				}
+			});
+		});
+		document.querySelectorAll('section').forEach(elem => observer.observe(elem));
+	</script>
+
+</body>
+
+</html>

@@ -77,7 +77,6 @@
 
 		#team-intro {
 			background-color: white;
-			box-shadow: -2px 2px 3px grey;
 		}
 
 		@media (min-width: 768px) {
@@ -110,11 +109,12 @@
 			padding: 5em !important;
 			width: 100%;
 			line-height: 1.2em;
-			background: -webkit-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 30%, rgba(255, 255, 255, 1) 100% );
-			background-image: -moz-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 30%, rgba(255, 255, 255, 1) 100% );
-			background-image: -o-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 30%, rgba(255, 255, 255, 1) 100% );
-			background-image: linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 30%, rgba(255, 255, 255, 1) 100% );
-			background-image: -ms-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 30%, rgba(255, 255, 255, 1) 100% );
+			background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 56.77% );
+			background: -webkit-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 56.77% );
+			background-image: -moz-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 56.77% );
+			background-image: -o-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 56.77% );
+			background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 56.77% );
+			background-image: -ms-linear-gradient( rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 1) 56.77% );
 		}
 
 		#programs-intro .btn-row {
@@ -130,7 +130,7 @@
 		}
 
 		@media (min-width: 768px) {
-			#local-section img {
+			#local-section img.fit {
 				max-height: 500px;
 				width: 100%;
 			}
@@ -219,7 +219,7 @@
 							<a class="nav-link" href="partnership.html">成為合作夥伴</a>
 						</li>
 						<li class="nav-item" id="">
-							<a class="nav-link" href="join-us.html">加入我們</a>
+							<a class="nav-link" href="recruitment.html">加入我們</a>
 						</li>
 						<li class="nav-item" id="">
 							<a class="nav-link" href="about.html">關於我們</a>
@@ -276,7 +276,7 @@
 					與多元組成的團隊一起成長。</p>
 				<p>我們相信，每一個你，都有潛力蛻變，創造正面影響力。</p>
 				<div class="row btn-row my-0">
-					<button class="btn btn-light">我們的故事</button>
+					<button class="btn shadow btn-light">我們的故事</button>
 				</div>
 			</div>
 		</section>
@@ -287,7 +287,7 @@
 				<div class="row img-clip-70">					
 					<img class="fit" src="img/example-1.jpg">
 				</div>
-				<div class="pb-1 pt-5 px-5 center" id="team-intro">
+				<div class="pb-1 pt-5 px-5 center shadow" id="team-intro">
 					<h2 class="text-center">AIESEC 的團隊</h2>
 					<p class="mb-0">
 						我們是一群來自全台20幾所學校的大學生，<br>
@@ -299,7 +299,7 @@
 						哪裡適合安放自己的你，而生。
 					</p>
 					<div class="row btn-row">
-						<button class="btn btn-primary">加入我們</button>
+						<a href="recruitment.html"><button class="btn shadow btn-primary">加入我們</button></a>
 					</div>
 				</div>
 			</div>
@@ -360,8 +360,8 @@
 					</div>
 				</div>
 				<div class="row btn-row">
-					<button class="btn btn-light btn-outline-primary">更多精選專案</button>
-					<button class="btn btn-primary">我要報名</button>
+					<button class="btn shadow btn-light btn-outline-primary">更多精選專案</button>
+					<button class="btn shadow btn-primary">我要報名</button>
 				</div>
 			</div>
 		</section>
@@ -378,8 +378,8 @@
 							我們希望協助渴望跨足國際的你，邁出第一步。
 						</p>
 						<div class="row btn-row">
-							<button class="btn btn-light btn-outline-primary">更多精選職缺</button>
-							<button class="btn btn-primary">我要報名</button>
+							<button class="btn shadow btn-light btn-outline-primary">更多精選職缺</button>
+							<button class="btn shadow btn-primary">我要報名</button>
 						</div>
 					</div>
 					<div class="col-md-5 col-sm-8 px-5 py-5">
@@ -408,11 +408,14 @@
 					<div class="col-md-8 col-sm-12 px-0">
 						<img class="fit" src="img/example-1.jpg">
 					</div>
-					<div class="col-md-4 col-sm-12 align-self-center center">
+					<div class="col-md-3 col-sm-10 align-self-center center">
 						<div class="container p-4">
 							<p>Eg, 活動名稱｜2020.7.14</p>
 							<p>Description_halbeb abv abef uhaibc ndv oue anll abef; qiu woujn dk  ldnbk hdbnd so ehnj.</p>
 						</div>
+					</div>
+					<div class="col-md-1 col-sm-2 align-self-center center">
+						<img src="img/arrow.svg">
 					</div>
 				</div>
 			</div>
@@ -438,39 +441,49 @@
 					</div>
 				</div>
 				<h4>他們這麼說 . . .</h4>
-				<div class="container comment">
-					<div class="row">
-						<div class="col-auto">
-							<img src="img/example-sq.jpg"><img src="img/comment-1.svg">
+				<div class="container">
+					<div class="row justify-content-end">
+						<div class="col"></div>
+						<div class="col-9 justify-self-center">
+							<div class="container-fluid comment">
+								<div class="row">
+									<div class="col-auto">
+										<img src="img/example-sq.jpg"><img src="img/comment-1.svg">
+									</div>
+									<div class="col">
+										<p class="mt-2">如果你對未來有點迷茫，這裡不是告訴你答案，<br>
+											而是教你找答案的方法。</p>
+										<p class="author">呂易蓉 | 2016 交大分會會長</p>
+									</div>
+								</div>
+							</div>
+							<div class="container comment">
+								<div class="row">
+									<div class="col-auto">
+										<img src="img/example-sq.jpg"><img src="img/comment-2.svg">
+									</div>
+									<div class="col">
+										<p class="mt-2">在 AIESEC，每個人都可以成為創造影響力的發起者；<br>
+											承擔的責任越重，你能發揮的影響力也就越大。</p>
+										<p class="author">林奇瑩 | 2019 行銷與品牌推廣總監</p>
+									</div>
+								</div>
+							</div>
+							<div class="container comment">
+								<div class="row">
+									<div class="col-auto">
+										<img src="img/example-sq.jpg"><img src="img/comment-1.svg">
+									</div>
+									<div class="col">
+										<p class="mt-2">在 AIESEC 時體會到，比別人的讚賞更無價的，<br>
+											是找到自己想追求的事物。</p>
+										<p class="author">林晏寧 | 2017 中央分會副會長</p>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="col">
-							<p class="mt-2">Description_Bbrsn ueho kn houefgb iuefgb kabwsi uhfjen kwuehfi  hebo fekfjb kwel
-							fliowekf  ebu wneob fkwenf knor.keufo lnwnefn llsllefn lwwael.</p>
-							<p class="author"><>nickname, 大專院校, position (year_title)</p>
-						</div>
-					</div>
-				</div>
-				<div class="container comment">
-					<div class="row">
-						<div class="col-auto">
-							<img src="img/example-sq.jpg"><img src="img/comment-2.svg">
-						</div>
-						<div class="col">
-							<p class="mt-2">Description_Bbrsn ueho kn houefgb iuefgb kabwsi uhfjen kwuehfi  hebo fekfjb kwel
-							fliowekf  ebu wneob fkwenf knor.keufo lnwnefn llsllefn lwwael.</p>
-							<p class="author"><>nickname, 大專院校, position (year_title)</p>
-						</div>
-					</div>
-				</div>
-				<div class="container comment">
-					<div class="row">
-						<div class="col-auto">
-							<img src="img/example-sq.jpg"><img src="img/comment-1.svg">
-						</div>
-						<div class="col">
-							<p class="mt-2">Description_Bbrsn ueho kn houefgb iuefgb kabwsi uhfjen kwuehfi  hebo fekfjb kwel
-							fliowekf  ebu wneob fkwenf knor.keufo lnwnefn llsllefn lwwael.</p>
-							<p class="author"><>nickname, 大專院校, position (year_title)</p>
+						<div class="col justify-self-end align-self-center center">
+							<img src="img/arrow.svg">
 						</div>
 					</div>
 				</div>
@@ -479,7 +492,7 @@
 
 		<section id="footer-section">
 			<div class="container py-4">
-				<h3>AIESEC 台灣 近期合作夥伴</h3>
+				<h4>AIESEC 台灣 近期合作夥伴</h4>
 				<div class="row border-bottom">
 					<div class="col footer-logo my-auto">
 						<img src="img/partner-logo-pwc.png">
@@ -512,7 +525,7 @@
 							<a class="nav-link" href="partnership.html">成為合作夥伴</a>
 						</li>
 						<li class="nav-item border-right" id="">
-							<a class="nav-link" href="join-us.html">加入我們</a>
+							<a class="nav-link" href="recruitment.html">加入我們</a>
 						</li>
 						<li class="nav-item border-right" id="">
 							<a class="nav-link" href="about.html">關於我們</a>
