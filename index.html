@@ -1,13 +1,14 @@
 <html>
 <head>
-	<title>AISEC</title>
+	<title>AIESEC</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" type="image/svg+xml" href="img/icon.svg">
 	<link rel="alternate icon" href="img/icon.ico">
 	<!-- CSS only -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<!-- JS, Popper.js, and jQuery -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -19,6 +20,173 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
 
 		</script>	
+	
+	<style>		
+		@media (min-width: 768px) {
+			.site-wrap {
+				overflow-y: scroll;
+				height: 100vh; 
+				scroll-snap-type: mandatory; /* Firefox */  
+				scroll-snap-type: y mandatory;/* Chrome Canary */ 
+				-ms-scroll-snap-type: mandatory; /* IE/Edge */  
+				-webkit-scroll-snap-type: mandatory; /* Safari */ 
+				-webkit-scroll-snap-destination: 50% 50%;
+			}
+		}
+
+		@media (min-width: 768px) {
+			section {
+				padding-top: 50px; 
+				height: 100vh;
+				overflow-y: hidden;
+				scroll-snap-align: start;
+				-ms-scroll-snap-align: start;
+				scroll-snap-coordinate: 0% 0%; /* older (Firefox/IE) */  
+				-webkit-scroll-snap-coordinate: 50% 50%; /* older (Safari) */ 
+			}
+		}
+
+		section > .container, section > .container-fluid {
+			display: -webkit-box;
+			display: flex;
+			-webkit-box-pack: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			flex-direction: column; }
+			@media (min-width: 768px) {
+				section > .container, section > .container-fluid {
+					height: 100%;
+				}
+			}
+
+		
+		#intro-section, #intern-section {    
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		#intro-section {
+			background-image: url("img/bg-deco-1.svg");
+		}
+
+		#volunteer-section, #impact-section {
+			background-color: #f2f2f2;
+		}
+
+		#team-intro {
+			background-color: white;
+			box-shadow: -2px 2px 3px grey;
+		}
+
+		@media (min-width: 768px) {
+			#team-intro {
+				min-width: 615px;
+				position: absolute;
+				right: 0;
+			}
+			.img-clip-70 {
+				max-width: 75%;
+				height: 100%;
+			}
+		}
+		@media (max-width: 768px) {
+			#team-intro {
+				max-width: 540px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: -30vh;
+			}
+			.img-clip-70 {
+				max-width: 100%;
+				height: 100%;
+			}
+		}
+
+		#programs-intro {
+			position: absolute;
+			bottom: 0;
+			padding: 5em !important;
+			width: 100%;
+			line-height: 1.2em;
+			background: -webkit-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 30%, rgba(255, 255, 255, 1) 100% );
+			background-image: -moz-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 30%, rgba(255, 255, 255, 1) 100% );
+			background-image: -o-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 30%, rgba(255, 255, 255, 1) 100% );
+			background-image: linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 30%, rgba(255, 255, 255, 1) 100% );
+			background-image: -ms-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 30%, rgba(255, 255, 255, 1) 100% );
+		}
+
+		#programs-intro .btn-row {
+			margin-top: 0;
+		}
+
+		#volunteer-section .col-md-4 {
+			padding-top: 30px; 
+		}
+
+		#intern-section {
+			background-image: url("img/bg-deco-2.svg");
+		}
+
+		@media (min-width: 768px) {
+			#local-section img {
+				max-height: 500px;
+				width: 100%;
+			}
+		}
+
+		#impact-counter {
+			background-color: white;    
+			box-shadow: -1px 3px 3px #aaa;
+			margin-top: 1em;
+			margin-bottom: 3em;
+			padding: 2em;
+		}
+
+		#impact-counter .row {
+			justify-content: space-between; }
+			@media (max-width: 768px) {
+				#impact-counter .row {
+					justify-content: center;
+				}
+			}
+
+		#impact-counter .number {
+			color: #2f80ed;
+			font-size: 3.75em;
+			text-align: right;
+			width: 2em;
+			padding-right: 5px;
+			display: inline-block;
+		}
+
+		#impact-counter .caption {
+			font-size: 1.5rem;
+		}
+
+		.comment {
+			background-color: white;
+			padding: 1rem;
+			margin-top: 1rem;
+		}
+
+		.comment p {
+			margin-bottom: 0 !important;
+			margin-right: 2rem;
+		}
+
+		.comment .author {
+			font-size: 0.875rem;
+			text-align: right;
+		}
+
+		.comment img {
+			width: 100px;
+			height: 100px;
+		}
+
+	</style>
 </head>
 
 <body>
@@ -30,30 +198,31 @@
 	<!-- NAVBAR -->
 	<header>
 		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light transparent">
-			<div class="container"><a class="navbar-brand" href="#"><img src="img/icon.png" class="icon"></a>
+			<div class="container">
+				<a class="navbar-brand" href="index.html#"><img src="img/icon.png" class="icon"></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ml-auto">
+					<ul class="navbar-nav justify-content-around">
 						<li class="nav-item" id="">
-							<a class="nav-link" href="">海外成長</a>
+							<a class="nav-link" href="volunteer.html">海外成長</a>
 						</li>
 						<li class="nav-item" id="">
-							<a class="nav-link" href="">海外實習</a>
+							<a class="nav-link" href="internship.html">海外實習</a>
 						</li>
 						<li class="nav-item" id="">
-							<a class="nav-link" href="">在地活動</a>
+							<a class="nav-link" href="local.html">在地活動</a>
 						</li>
 						<li class="nav-item" id="">
-							<a class="nav-link" href="">關於我們</a>
+							<a class="nav-link" href="partnership.html">成為合作夥伴</a>
 						</li>
 						<li class="nav-item" id="">
-							<a class="nav-link" href="">加入我們</a>
+							<a class="nav-link" href="join-us.html">加入我們</a>
 						</li>
 						<li class="nav-item" id="">
-							<a class="nav-link" href="">成爲合作夥伴</a>
+							<a class="nav-link" href="about.html">關於我們</a>
 						</li>
 						<li class="nav-item" id="">
 							<a class="nav-link" href=""><img src="img/facebook-icon.png" class="icon mt-1"></a>
@@ -102,12 +271,13 @@
 		<section id="intro-section">
 			<div class="container center">
 				<h1>我們致力於培養青年領導力</h1>
-				<p>
-					AIESEC 是一個激發個人成長與培養社會意識的平台，<br>
-					我們鼓勵你做自己、培養實踐能力、找到職涯方向，<br>
-					與多元組成的團隊一起成長。<br>
-					我們相信，每一個你，都有潛力蛻變，創造正面影響力。
-				</p>
+				<p>AIESEC 是一個激發個人成長與培養社會意識的平台，</p>
+				<p>我們鼓勵你做自己、培養實踐能力、找到職涯方向，<br>
+					與多元組成的團隊一起成長。</p>
+				<p>我們相信，每一個你，都有潛力蛻變，創造正面影響力。</p>
+				<div class="row btn-row my-0">
+					<button class="btn btn-light">我們的故事</button>
+				</div>
 			</div>
 		</section>
 
@@ -115,11 +285,11 @@
 		<section id="team-section">
 			<div class="container-fluid position-relative">
 				<div class="row img-clip-70">					
-					<img class="fit" src="img/example-sq.jpg">
+					<img class="fit" src="img/example-1.jpg">
 				</div>
-				<div class="p-5" id="team-intro">
-					<h2 class="text-center">AISEC團隊</h2>
-					<p>
+				<div class="pb-1 pt-5 px-5 center" id="team-intro">
+					<h2 class="text-center">AIESEC 的團隊</h2>
+					<p class="mb-0">
 						我們是一群來自全台20幾所學校的大學生，<br>
 						一起在 AIESEC 裡邊做邊學，探索職涯方向。<br>
 						從領導與被領導中，學習如何帶人帶到心，與夥伴一起成長。<br>
@@ -129,7 +299,6 @@
 						哪裡適合安放自己的你，而生。
 					</p>
 					<div class="row btn-row">
-						<button class="btn btn-light">我們的故事</button>
 						<button class="btn btn-primary">加入我們</button>
 					</div>
 				</div>
@@ -147,8 +316,8 @@
 						讓外國青年認識台灣，讓台灣青年走向世界。
 					</h3>
 					<div class="row btn-row mb-0">
-						<button class="btn btn-link">了解志工計劃〉</button>
-						<button class="btn btn-link">了解實習計劃〉</button>
+						<button class="btn btn-link">了解志工計畫〉</button>
+						<button class="btn btn-link">了解實習計畫〉</button>
 					</div>
 				</div>
 			</div>
@@ -156,42 +325,42 @@
 
 		<section id="volunteer-section">
 			<div class="container">
-				<h2>海外成長，最難忘的志工之旅</h2>
+				<h2 class="mb-3">海外成長，最難忘的志工之旅</h2>
 				<p>
 					六到八週的海外志工專案，每個志工專案皆由當地青年設計，回饋到一項聯合國永續發展目標SDGs，<br>
 					與來自世界各地的夥伴一起，在學習與付出中收穫，在文化碰撞與理解中成長。
 				</p>
 				<div class="row justify-content-center">
-					<div class="col-md-4 col-sm-6">
+					<div class="col-md-4 col-sm-6 pl-5 pr-4">
 						<div class="card border-0">
 							<div class="img-label">小編嚴選</div>
 							<img class="card-img-top" src="img/example-sq.jpg">
-							<div class="card-body">
+							<div class="card-body border-primary">
 								<p class="card-title">泰國｜小學英語教學</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-6">
+					<div class="col-md-4 col-sm-6 pl-5 pr-4">
 						<div class="card border-0">
 							<div class="img-label">小錢做大事</div>
 							<img class="card-img-top" src="img/example-sq.jpg">
-							<div class="card-body">
+							<div class="card-body border-primary">
 								<p class="card-title">馬來西亞｜挑戰零剩食</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-6">
+					<div class="col-md-4 col-sm-6 pl-5 pr-4">
 						<div class="card border-0">
 							<div class="img-label">勇敢闖異域</div>
 							<img class="card-img-top" src="img/example-sq.jpg">
-							<div class="card-body">
+							<div class="card-body border-primary">
 								<p class="card-title">坦尚尼亞｜孤兒不孤單</p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row btn-row">
-					<button class="btn btn-light">更多精選專案</button>
+					<button class="btn btn-light btn-outline-primary">更多精選專案</button>
 					<button class="btn btn-primary">我要報名</button>
 				</div>
 			</div>
@@ -200,24 +369,24 @@
 		<section id="intern-section">
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-md-7 col-sm-12 align-self-center">
+					<div class="col-md-7 col-sm-12 align-self-center pr-5">
 						<h2>海外實習，大步跨向國際</h2>
 						<p class="pb-3">
-							三個月到一年的實習計畫，亞太地區商管、行銷、資訊、教育四大類別的實習職缺，<br>
+							我們提供三個月到一年的實習計畫，亞太地區商管、行銷、資訊、教育四大類別的實習職缺，<br>
 							<br>
 							誰說海外工作經驗專屬留學生？<br>
 							我們希望協助渴望跨足國際的你，邁出第一步。
 						</p>
 						<div class="row btn-row">
-							<button class="btn btn-light">了解實習計劃</button>
+							<button class="btn btn-light btn-outline-primary">更多精選職缺</button>
 							<button class="btn btn-primary">我要報名</button>
 						</div>
 					</div>
-					<div class="col-md-5 col-sm-8">
+					<div class="col-md-5 col-sm-8 px-5 py-5">
 						<div class="card">
 							<div class="img-label">暑期最熱門</div>
 							<img class="card-img-top" src="img/example-sq.jpg">
-							<div class="card-body">
+							<div class="card-body border-primary">
 								<p class="card-title">馬來西亞｜新創數位行銷</p>
 							</div>
 						</div>
@@ -227,19 +396,19 @@
 		</section>
 
 		<section id="local-section">
-			<div class="container-fluid">
+			<div class="container-fluid justify-content-end">
 				<div class="container">
 					<h2 class="mb-0 center">在地活動，讓青年影響力在我們最親近的土地發芽</h2>
-					<div class="row btn-row">
+					<div class="row btn-row my-3">
 						<button class="btn btn-link">近期大型活動 〉</button>
 						<button class="btn btn-link">瀏覽在地營隊 〉</button>
 					</div>
 				</div>
 				<div class="row full-width">
-					<div class="col-md-6 col-sm-12">
+					<div class="col-md-8 col-sm-12 px-0">
 						<img class="fit" src="img/example-1.jpg">
 					</div>
-					<div class="col-md-6 col-sm-12 align-self-center center">
+					<div class="col-md-4 col-sm-12 align-self-center center">
 						<div class="container p-4">
 							<p>Eg, 活動名稱｜2020.7.14</p>
 							<p>Description_halbeb abv abef uhaibc ndv oue anll abef; qiu woujn dk  ldnbk hdbnd so ehnj.</p>
@@ -250,40 +419,58 @@
 		</section>
 
 		<section id="impact-section">
-			<div class="container">
-				<h2 class="mb-1">今年，<small>我們迎接了</small></h2>
+			<div class="container px-5">
+				<h4 class="mb-1">去年，我們迎接了</h4>
 				<div class="container" id="impact-counter">
 					<div class="row">
 						<div class="col-auto">
-							<strong class="number" data-number="54">0</strong>
+							<span class="number" data-number="300">0</span>
 							<span class="caption">位新夥伴</span>
 						</div>				
 						<div class="col-auto">
-							<strong class="number" data-number="54">0</strong>
+							<span class="number" data-number="400">0</span>
 							<span class="caption">位國內外志工</span>
 						</div>
 						<div class="col-auto">
-							<strong class="number" data-number="54">0</strong>
+							<span class="number" data-number="800">0</span>
 							<span class="caption">位營隊成員</span>
 						</div>
 					</div>
 				</div>
-				<h2>他們這麼說 . . .</h2>
-				<div class="row">
-					<div class="col-11">
-						<div class="row justify-content-center">
-							<div class="col-md-4 col-sm-6">
-								<img class="fit" src="img/example-sq.jpg">
-								<p class="center">nickname</p>
-							</div>
-							<div class="col-md-4 col-sm-6">
-								<img class="fit" src="img/example-sq.jpg">
-								<p class="center">nickname</p>
-							</div>
-							<div class="col-md-4 col-sm-6">
-								<img class="fit" src="img/example-sq.jpg">
-								<p class="center">nickname</p>
-							</div>
+				<h4>他們這麼說 . . .</h4>
+				<div class="container comment">
+					<div class="row">
+						<div class="col-auto">
+							<img src="img/example-sq.jpg"><img src="img/comment-1.svg">
+						</div>
+						<div class="col">
+							<p class="mt-2">Description_Bbrsn ueho kn houefgb iuefgb kabwsi uhfjen kwuehfi  hebo fekfjb kwel
+							fliowekf  ebu wneob fkwenf knor.keufo lnwnefn llsllefn lwwael.</p>
+							<p class="author"><>nickname, 大專院校, position (year_title)</p>
+						</div>
+					</div>
+				</div>
+				<div class="container comment">
+					<div class="row">
+						<div class="col-auto">
+							<img src="img/example-sq.jpg"><img src="img/comment-2.svg">
+						</div>
+						<div class="col">
+							<p class="mt-2">Description_Bbrsn ueho kn houefgb iuefgb kabwsi uhfjen kwuehfi  hebo fekfjb kwel
+							fliowekf  ebu wneob fkwenf knor.keufo lnwnefn llsllefn lwwael.</p>
+							<p class="author"><>nickname, 大專院校, position (year_title)</p>
+						</div>
+					</div>
+				</div>
+				<div class="container comment">
+					<div class="row">
+						<div class="col-auto">
+							<img src="img/example-sq.jpg"><img src="img/comment-1.svg">
+						</div>
+						<div class="col">
+							<p class="mt-2">Description_Bbrsn ueho kn houefgb iuefgb kabwsi uhfjen kwuehfi  hebo fekfjb kwel
+							fliowekf  ebu wneob fkwenf knor.keufo lnwnefn llsllefn lwwael.</p>
+							<p class="author"><>nickname, 大專院校, position (year_title)</p>
 						</div>
 					</div>
 				</div>
@@ -292,59 +479,59 @@
 
 		<section id="footer-section">
 			<div class="container py-4">
-				<h4>AIESEC 台灣 近期合作夥伴</h4>
+				<h3>AIESEC 台灣 近期合作夥伴</h3>
 				<div class="row border-bottom">
 					<div class="col footer-logo my-auto">
-						<img src="img/example-sq.jpg">
+						<img src="img/partner-logo-pwc.png">
 					</div>
 					<div class="col footer-logo my-auto">
-						<img src="img/example-sq.jpg">
+						<img src="img/partner-logo-TATA.png">
 					</div>
 					<div class="col footer-logo my-auto">
-						<img src="img/example-sq.jpg">
+						<img src="img/partner-logo-ADB.png">
 					</div>
 					<div class="col footer-logo my-auto">
-						<img src="img/example-sq.jpg">
+						<img src="img/partner-logo-UN.png">
 					</div>
 					<div class="col footer-logo my-auto">
-						<img src="img/example-sq.jpg">
-					</div>
-					<div class="col footer-logo my-auto">
-						<img src="img/example-sq.jpg">
+						<img src="img/partner-logo-DHL.png">
 					</div>
 				</div>
 				<div class="d-flex center pb-5" id="footer-navbar">
 					<ul class="nav py-2 center">
 						<li class="nav-item border-right" id="">
-							<a class="nav-link" href="">海外成長</a>
+							<a class="nav-link" href="volunteer.html">海外成長</a>
 						</li>
 						<li class="nav-item border-right" id="">
-							<a class="nav-link" href="">海外實習</a>
+							<a class="nav-link" href="internship.html">海外實習</a>
 						</li>
 						<li class="nav-item border-right" id="">
-							<a class="nav-link" href="">在地活動</a>
-						</li>
-						<li class="nav-item border-right" id="">
-							<a class="nav-link" href="">關於我們</a>
-						</li>
-						<li class="nav-item border-right" id="">
-							<a class="nav-link" href="">加入我們</a>
+							<a class="nav-link" href="local.html">在地活動</a>
 						</li>
 						<li class="nav-item" id="">
-							<a class="nav-link" href="">成爲合作夥伴</a>
+							<a class="nav-link" href="partnership.html">成為合作夥伴</a>
+						</li>
+						<li class="nav-item border-right" id="">
+							<a class="nav-link" href="join-us.html">加入我們</a>
+						</li>
+						<li class="nav-item border-right" id="">
+							<a class="nav-link" href="about.html">關於我們</a>
 						</li>
 					</ul>
 				</div>
 				<p>有任何需要，歡迎聯絡我們</p>
-				<div class="row">
-					<div class="col col-lg-4 col-md-6 col-sm-12">週一至週五<br>上午 9:30 至下午 6:00</div>
-					<div class="col-lg-4 col-md-6 col-sm-12 align-self-end"><img class="icon" src="img/contact-email.png">taiwan@aiesec.net</div>
-					<div class="col-lg-4 col-md-0"></div>
-				</div>
 				<div class="row border-bottom">
-					<div class="col-lg-4 col-md-6 col-sm-12"><img class="icon" src="img/contact-location.png">新北市板橋區莒光路52號之一</div>
-					<div class="col-lg-4 col-md-6 col-sm-12"><img class="icon" src="img/contact-phone.png">02-2256 2380</div>
-					<div class="col text-right"><img class="icon" src="img/contact-facebook.png"><img class="icon" src="img/contact-messenger.png"></div>
+					<div class="col col-auto align-self-end">
+						<div>週一至週五<br>上午 9:30 至下午 6:00</div>
+						<div><img class="icon" src="img/contact-location.png">新北市板橋區莒光路52號之一</div>
+					</div>
+					<div class="col col-auto align-self-end">
+						<div><img class="icon" src="img/contact-email.png">taiwan@aiesec.net</div>
+						<div><img class="icon" src="img/contact-phone.png">02-2256 2380</div>
+					</div>
+					<div class="col align-self-end">
+						<div class="text-right"><img class="icon" src="img/contact-facebook.png"><img class="icon" src="img/contact-messenger.png"></div>
+					</div>
 				</div>
 				<p class="text-right small">Copyright © 2020 AIESEC in Taiwan MC</p>
 			</div>
