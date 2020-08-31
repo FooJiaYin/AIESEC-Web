@@ -113,6 +113,11 @@ orange {
         margin-left: auto;
         margin-right: auto;
     }
+    .w-45 {
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .btn-row {    
@@ -206,13 +211,12 @@ img.icon {
 }
 
 #home-section .fit {
-    height: 100%;
     width: 100%;
 }
 
 #home-section .btn-row {
     position: absolute;
-    bottom: 2em;
+    bottom: 3em;
 }
 
 .feature {

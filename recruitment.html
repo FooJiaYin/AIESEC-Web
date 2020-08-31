@@ -48,7 +48,7 @@
 		}
 
 		#home-section {
-			margin-top: 0 !important;
+			margin-top: 40px !important;
 		}
 
 		#definition-section .col {
@@ -79,21 +79,24 @@
 		.block-table p {
 			font-size: 1.125rem;
 		}
-
-		@media (min-width: 768px) {
-			.block-table .sq {
-				height: 260px;
-				width: 260px;
-			}
-		}	
-
-		.block-table .col, .block-table .col-8 {
+		
+		.block-table .col {
+			padding: 0;
+			margin: 0;
+		}
+		
+		.block-table .col div {
 			background-color: #c9ccd1;
-			margin: 0.75rem;
-			padding: 1em;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
+			margin: 0.75rem;
+			padding: 1em;
+		}
+		@media (min-width: 768px) {
+			.block-table .col div, .block-table .col-8 div {
+				height: 260px;
+			}
 		}	
 
 		.bg-yellow {
@@ -116,13 +119,13 @@
 			position: relative;
 			width: 770px;
 		}
-		#you-will .sq {
+		#you-will .rect {
 			position: absolute;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 		}
-		#you-will .sq * {
+		#you-will .* {
 			margin-bottom: 0;
 			line-height: 3em;
 			width: 270px;
@@ -133,31 +136,31 @@
 			font-weight: bold;
 		}
 		#you-will-1 {
-			width: 335px;
-			height: 335px;
+			width: 337px;
+			height: 299px;
 			left: 0px;
 			top: 0px;
 			border: 3px solid rgba(3, 125, 242, 0.7);
 		}
 		#you-will-2 {
 			width: 330px;
-			height: 330px;
-			left: 370px;
-			top: 70px;
+			height: 321px;
+			left: 377px;
+			top: 56px;
 			border: 3px solid #FAD149;
 		}
 		#you-will-3 {
-			width: 381px;
-			height: 381px;
-			left: 46px;
-			top: 287px;
+			width: 346px;
+			height: 328px;
+			left: 77px;
+			top: 270px;
 			border: 3px solid #F58A24;
 		}
 		#you-will-4 {
 			width: 320px;
 			height: 300px;
-			left: 450px;
-			top: 368px;
+			left: 456px;
+			top: 346px;
 			border: 3px solid #30C29E;
 		}
 		
@@ -257,7 +260,7 @@
 		<!-- HOME -->
 		<section id="home-section">
 			<div class="container full-width full-height">
-				<img class="fit" src="img/example-1.jpg">
+				<img class="fit" src="img/banner-recruitment.png">
 					<div class="row btn-row w-100">
 						<button class="btn btn-light btn-outline-primary" href="volunteer.html#projects"><h4>報名說明會</h4></button>
 						<button class="btn btn-primary"><h4>加入我們</h4></button>
@@ -267,7 +270,7 @@
 
 		<!-- INTRO -->
 		<section id="definition-section">
-			<div class="container w-60">
+			<div class="container w-60 px-0">
 				<div class="row">
 					<div class="col col-auto border-right">
 						<h2>AIESEC</h2>
@@ -276,7 +279,7 @@
 					<div class="col">
 						<h2><i>We care about <blue>Youth</blue> <orange>& LEADERSHIP. </orange></i></h2>
 						<p>全球最大由17-30歲青年運營的非營利組織，成立於 1948 年，<br>
-							透過促進跨文化交流，培養領導力的四大要素：<br>
+							透過促進跨文化交流，培養領導力的四大特質：<br>
 							世界觀、問題解決能力、能激勵他人，更認識自己。</p>
 					</div>
 				</div>
@@ -309,55 +312,71 @@
 				到企業、社區、非營利組織、國中小學中擔任志工或實習生，<br>
 				在回饋社會的過程中，也為台灣的教育氛圍、公司文化注入更多元的活力。</p>
 
-			<div class="w-60"><img class="fit" src="img/recruitment-1.png"></div>
+			<div class="w-45"><img class="fit" src="img/recruitment-1.png"></div>
 		</section>
 
 		<section class="center">
 			<h1>我們在尋找這樣的你</h1>
 			<div class="w-60 block-table">
 				<div class="row">
-					<div class="col sq center">
-						<h3>樂於團隊合作</h3>
-						<p>團隊是我們的單位，<br>
-							你不會落單。</p>
+					<div class="col center">
+						<div>
+							<h3>樂於團隊合作</h3>
+							<p>團隊是我們的單位，<br>
+								你不會落單。</p>
+						</div>
 					</div>
-					<div class="col sq center bg-yellow">
-						<h3>主動學習</h3>
-						<p>在這裡不怕沒東西學，<br>
-							就怕你不想學。</p>
+					<div class="col center">
+						<div class="bg-yellow">
+							<h3>主動學習</h3>
+							<p>在這裡不怕沒東西學，<br>
+								就怕你不想學。</p>
+						</div>
 					</div>
-					<div class="col sq center">
-						<h3>在乎人與社會</h3>
-						<p>我們關心身邊的夥伴，<br>
-							也在乎社會上發生的事情。</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col sq center bg-yellow">
-						<h3>摸索未來方向中</h3>
-						<p>把握機會多方嘗試，<br>
-							無論向著何方，都是前進。</p>
-					</div>
-					<div class="col sq center">
-						<h3>不安於現狀</h3>
-						<p>想挑戰自己？<br>
-							恭喜你找對地方了。</p>
-					</div>
-					<div class="col sq center bg-yellow">
-						<h3>付諸行動</h3>
-						<p>與其抱怨，<br>
-							不如帶來改變。</p>
+					<div class="col center">
+						<div>
+							<h3>在乎人與社會</h3>
+							<p>我們關心身邊的夥伴，<br>
+								也在乎社會上發生的事情。</p>
+						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col center bg-orange">
-						<h3 class="mb-0">變得<br>
-							# 無懼而有為</h3>
+					<div class="col center">
+						<div class="bg-yellow">
+							<h3>摸索未來方向中</h3>
+							<p>把握機會多方嘗試，<br>
+								無論向著何方，都是前進。</p>
+						</div>
 					</div>
-					<div class="col-8 center bg-dark-gray">
-						<p>不斷嘗試，因未知而生的恐懼就會減少；<br>
-							在不斷嘗試的旅程中，我們實踐、我們挫敗、我們成長；</p>							
-						<p><strong>成長，是因為我們曾經恐懼，是為了成為無懼而有為的人。</strong></p>
+					<div class="col center">
+						<div>
+							<h3>不安於現狀</h3>
+							<p>想挑戰自己？<br>
+								恭喜你找對地方了。</p>
+						</div>
+					</div>
+					<div class="col center">
+						<div class="bg-yellow">
+							<h3>付諸行動</h3>
+							<p>與其抱怨，<br>
+								不如帶來改變。</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col center">
+						<div class="bg-orange">
+							<h3 class="mb-0">變得<br>
+								# 無懼而有為</h3>
+						</div>
+					</div>
+					<div class="col col-8 center">
+						<div class="bg-dark-gray">
+							<p>不斷嘗試，因未知而生的恐懼就會減少；<br>
+								在不斷嘗試的旅程中，我們實踐、我們挫敗、我們成長；</p>							
+							<p><strong>成長，是因為我們曾經恐懼，是為了成為無懼而有為的人。</strong></p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -366,25 +385,25 @@
 		<section class="center full-height" id="you-will">			
 			<h1>在 AIESEC，#你會</h1>
 			<div class="container justify-content-center">
-				<div class="sq" id="you-will-1">
+				<div class="rect" id="you-will-1">
 					<p class="left">擁有</p>
 					<h2>緊密連結的<br>
 						夥伴</h2>
 					<p class="right">跟完整規劃的團隊經驗</p>
 				</div>
-				<div class="sq" id="you-will-2">
+				<div class="rect" id="you-will-2">
 					<p class="left">體驗可以</p>
 					<h2>充分發揮的<br>
 						實務運作</h2>
 					<p class="right">打造行銷力與企劃力</p>
 				</div>
-				<div class="sq" id="you-will-3">
+				<div class="rect" id="you-will-3">
 					<p class="left">經歷</p>
 					<h2>經驗式<br>
 						領導力培訓</h2>
 					<p class="right">讓你兼具軟硬實力</p>
 				</div>
-				<div class="sq" id="you-will-4">
+				<div class="rect" id="you-will-4">
 					<p class="left">有機會參加</p>
 					<h2>跨國會議<br>
 						與活動</h2>
