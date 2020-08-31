@@ -37,7 +37,9 @@
 
 		@media (min-width: 768px) {
 			section h1 {
-				width: 60%;
+				width: fit-content;
+				padding-left: 2em;
+				padding-right: 2em;
 			}
 		}
 
@@ -98,22 +100,6 @@
 				height: 260px;
 			}
 		}	
-
-		.bg-yellow {
-			background-color: #fad149 !important;
-		}
-
-		.bg-orange *, .bg-dark-gray * {
-			color: white !important;
-		}		
-
-		.bg-orange {
-			background-color: #f58a24 !important;
-		}		
-
-		.bg-dark-gray {
-			background-color: #4f4f4f !important;
-		}
 
 		#you-will .container {
 			position: relative;
@@ -208,6 +194,100 @@
 			padding: 1.5em;
 			margin-bottom: 0;
 		}
+
+		#process p {			
+			font-size: 1.125rem;
+		}
+
+		#process .circle-4 {
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			justify-content: center;
+			color: white;
+		}	
+		
+		#process .circle-4 h3 {
+			font-weight: 600;
+		}
+		
+		#process .circle-4 p {
+			position: absolute;
+			width: 100%;
+			text-align: center;
+		}
+		@media (min-width: 768px) {	
+			#process .circle-4 p {
+				bottom: 150px;
+			}
+		}
+
+		#process .circle-4.bg-img {
+			background: url("img/recruitment-bg-deco.png");
+			background-size: cover;
+		}
+
+		#process .col > p {
+			margin-top: 2em;
+			margin-left: -3em;
+			margin-right: -3em;
+			line-height: 1.6em;
+		}
+
+		#process .circle-4 #annotation-1 {
+			position: absolute;
+			bottom: -2rem;
+		}
+
+		#process .circle-4 #annotation-2 {
+			position: absolute;
+			bottom: -1rem;
+			right: 1rem;
+		}
+
+		#process .circle-4 #annotation-3 {
+			position: absolute;
+			bottom: 2rem;
+			right: -1rem;
+		}
+
+		#division .col * {
+			text-align: left;
+		}
+
+		#division h4 {
+			color: #4f4f4f;
+			padding: 10px 15px;
+			width: fit-content;
+			border: 4px solid #F58A24;
+			border-radius: 30px;
+		}
+
+		#division p {
+			font-size: 1.125rem;
+			margin-left: 15px;
+		}
+
+		#division img {
+			max-width: 130%;
+		}
+
+		#join-us {
+			position: relative;
+			margin-bottom: 0;
+			padding-top: 4rem;
+			padding-bottom: 2rem;
+		}
+
+		#join-us-deco-1 {
+			top: -122px;
+			left: 230px;
+		}
+
+		#join-us-deco-2 {
+			top: -93px;
+			right: 246px;
+		}
 	</style>
 </head>
 
@@ -261,10 +341,10 @@
 		<section id="home-section">
 			<div class="container full-width full-height">
 				<img class="fit" src="img/banner-recruitment.png">
-					<div class="row btn-row w-100">
-						<button class="btn btn-light btn-outline-primary" href="volunteer.html#projects"><h4>報名說明會</h4></button>
-						<button class="btn btn-primary"><h4>加入我們</h4></button>
-					</div>
+				<div class="row btn-row w-100">
+					<button class="btn btn-light btn-outline-primary" href="volunteer.html#projects"><h4>報名說明會</h4></button>
+					<button class="btn btn-primary"><h4>加入我們</h4></button>
+				</div>
 			</div>
 		</section>
 
@@ -461,7 +541,82 @@
 			</div>
 		</section>
 
-		<section id="footer-section">
+		<section class="center" id="process">
+			<h1>AIESEC 秋季徵才 #流程</h1>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col">
+						<div class="circle-4 bg-orange">
+							<p>9月及10月</p>
+							<h3>校園說明會</h3>
+							<img id="annotation-1" src="img/deco-arrow-1.svg">
+						</div>
+						<p>將帶給你完整的 AIESEC 介紹、部門體驗，<br>
+							以及學長姐豐富的故事分享。<br>
+							還在猶豫要不要加入？<br>
+							把你的疑慮帶來說明會吧！</p>
+					</div>
+					<div class="col">
+						<div class="circle-4 bg-img">
+							<h3>提交申請表</h3>
+						</div>
+					</div>
+					<div class="col">
+						<div class="circle-4 bg-orange">
+							<h3>面試或徵選營</h3>
+							<img id="annotation-2" src="img/deco-arrow-2.svg">
+						</div>
+						<p>聊聊你想加入的動機與想進的部門，<br>
+							讓我們更認識彼此。<br>
+							不用穿正裝 ，<br>
+							英文能力並非重要篩選標準。</p>
+					</div>
+					<div class="col">
+						<div class="circle-4 bg-orange">
+							<p>10/10, 10/11</p>
+							<h3>新生大會</h3>
+							<img id="annotation-3" src="img/deco-heart.svg">
+						</div>
+						<p>確認錄取後，務必參加第一次社課<br>
+							認識分會的夥伴與分配部門。<br>
+							我們會在大會<br>
+							歡迎你成為 AIESECer。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="center" id="division">
+			<h1>選擇離你最近的校園分會</h1>
+			<div class="row center">
+				<div class="col col-auto align-self-start">
+					<h4>台北地區</h4>
+					<p>臺大分會、政大分會、東吳分會、輔仁分會、北大分會</p>
+					<h4>桃竹地區</h4>
+					<p>中央分會、元智分會、清華分會、交大分會</p>
+					<h4>台中地區</h4>
+					<p>中興分會、逢甲分會</p>
+					<h4>南部地區</h4>
+					<p>中正分會、成大分會、文藻分會</p>
+				</div>
+				<div class="col-2">
+					<img src="img/recruitment-division-map.png">
+				</div>
+			</div>
+		</section>
+
+		<section class="center bg-yellow" id="join-us">
+			<img class="position-absolute" width="156" src="img/recruitment-deco-1.png" id="join-us-deco-1">
+			<img class="position-absolute" width="200" src="img/recruitment-deco-2.png" id="join-us-deco-2">
+			<h1 class="mb-0">我們期待與你一起成長</h1>
+			<h4>成為對未來無懼，勇於實踐的自己。</h4>
+			<div class="row btn-row w-100">
+				<button class="btn btn-light btn-outline-primary" href="volunteer.html#projects"><h4>報名說明會</h4></button>
+				<button class="btn btn-primary"><h4>加入我們</h4></button>
+			</div>
+		</section>
+
+		<section id="footer-section" class="mt-0">
 			<div class="container py-4">
 				<h4>AIESEC 台灣 近期合作夥伴</h4>
 				<div class="row border-bottom">

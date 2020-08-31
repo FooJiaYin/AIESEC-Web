@@ -53,6 +53,22 @@ orange {
     color: #f58a24;
 }
 
+.bg-yellow {
+    background-color: #fad149 !important;
+}
+
+.bg-orange *, .bg-dark-gray * {
+    color: white !important;
+}		
+
+.bg-orange {
+    background-color: #f58a24 !important;
+}		
+
+.bg-dark-gray {
+    background-color: #4f4f4f !important;
+}
+
 .card {
     position: relative;
 }
@@ -184,6 +200,17 @@ img.icon {
 
 .navbar .nav-link {
     color: #2f80ed !important;
+}
+
+.circle-4 {
+    border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+    .circle-4 {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 @media (min-width: 768px) {
