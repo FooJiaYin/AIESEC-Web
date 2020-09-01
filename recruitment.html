@@ -22,9 +22,18 @@
 		</script>	
 
 	<style>
-		section {
-			margin-top: 5rem;
-			margin-bottom: 7rem;
+		@media (min-width: 768px) {
+			section {
+				margin-top: 5rem;
+				margin-bottom: 7rem;
+			}
+		}
+
+		@media (max-width: 768px) {
+			section {
+				padding-top: 2rem;
+				padding-bottom: 3rem;
+			}
 		}
 
 		section h1 {
@@ -33,29 +42,65 @@
 			background: url("img/“.svg");
 			background-repeat: no-repeat;
 			background-position: top left;
+			width: fit-content;
+		}
+
+		
+		@media (max-width: 768px) {
+			section h1 {
+				background-size: 10px;
+				padding-left: 1em;
+				padding-right: 1em;
+			}
 		}
 
 		@media (min-width: 768px) {
 			section h1 {
-				width: fit-content;
 				padding-left: 2em;
 				padding-right: 2em;
+			}
+
+			section p {
+				font-size: 1.5rem;
 			}
 		}
 
 		section p {
-			font-size: 1.5rem;
 			line-height: 1.3em;
 			margin-bottom: 1em;
 		}
 
 		#home-section {
 			margin-top: 0 !important;
+			padding-top: 0 !important;
+		}
+
+		#home-section .container {
+			height: fit-content;
+			position: relative;
+		}
+
+		@media (max-width: 768px) {
+			#home-section .btn-row {
+				flex-direction: column-reverse;
+			}
+		}
+
+		@media (min-width: 768px) {
+			#home-section .btn-row {
+				width: 100%;
+			}
 		}
 
 		#definition-section .col {
-			padding-left: 1.5em;
-			padding-right: 1.5rem;
+			padding-left: 3%;
+			padding-right: 3%;
+		}
+
+		@media (max-width: 768px) {
+			#definition-section p, .block-table p{
+				font-size: 12px;
+			}
 		}
 
 		#definition-section h2 {
@@ -68,6 +113,15 @@
 			color: #4f4f4f;
 		}
 
+		@media (max-width: 768px) {		
+			section .w-45 {
+				width: 70%;
+			}
+			section .w-60 {
+				width: 80%;
+			}
+		}
+
 		.block-table * {
 			line-height: 1.7em;
 			color: #4f4f4f;
@@ -76,10 +130,6 @@
 		.block-table h3 {
 			font-weight: bold;
 			margin-bottom: 1em;
-		}
-
-		.block-table p {
-			font-size: 1.125rem;
 		}
 		
 		.block-table .col {
@@ -92,62 +142,106 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			margin: 0.75rem;
-			padding: 1em;
 		}
 		@media (min-width: 768px) {
-			.block-table .col div, .block-table .col-8 div {
+			.block-table .col div {
+				padding: 1em;
+				margin: 0.75rem;
 				height: 260px;
 			}
-		}	
+			.block-table p {
+				font-size: 1.125rem;
+			}
+		}			
 
-		#you-will .container {
-			position: relative;
-			width: 770px;
+		@media (max-width: 768px) {	
+			.block-table .col div {
+				margin: 3px;
+				padding: 1em 0.5em;
+			}		
+			.block-table .col-6 div {
+				height: 150px;
+			}
+			.block-table p {
+				font-weight: bold;
+			}
+			.block-table .bg-dark-gray p {
+				font-size: 14px;
+				font-weight: normal;
+			}
+			.block-table .bg-dark-gray strong {
+				font-size: 18px;
+				font-weight: bold;
+			}
 		}
-		#you-will .rect {
-			position: absolute;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
+
+		@media (min-width: 768px) {
+			#you-will .container {
+				position: relative;
+				width: 770px;
+			}
+			#you-will .rect {
+				position: absolute;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+			#you-will .rect * {
+				margin-bottom: 0;
+				width: 270px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#you-will h2 {
+				font-weight: bold;
+			}
+			#you-will p {				
+				line-height: 3em;
+			}
+			#you-will-1 {
+				width: 337px;
+				height: 299px;
+				left: 0px;
+				top: 0px;
+				border: 3px solid rgba(3, 125, 242, 0.7);
+			}
+			#you-will-2 {
+				width: 330px;
+				height: 321px;
+				left: 377px;
+				top: 56px;
+				border: 3px solid #FAD149;
+			}
+			#you-will-3 {
+				width: 346px;
+				height: 328px;
+				left: 77px;
+				top: 270px;
+				border: 3px solid #F58A24;
+			}
+			#you-will-4 {
+				width: 320px;
+				height: 300px;
+				left: 456px;
+				top: 346px;
+				border: 3px solid #30C29E;
+			}
 		}
-		#you-will .rect * {
-			margin-bottom: 0;
-			line-height: 3em;
-			width: 270px;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		#you-will h2 {
-			font-weight: bold;
-		}
-		#you-will-1 {
-			width: 337px;
-			height: 299px;
-			left: 0px;
-			top: 0px;
-			border: 3px solid rgba(3, 125, 242, 0.7);
-		}
-		#you-will-2 {
-			width: 330px;
-			height: 321px;
-			left: 377px;
-			top: 56px;
-			border: 3px solid #FAD149;
-		}
-		#you-will-3 {
-			width: 346px;
-			height: 328px;
-			left: 77px;
-			top: 270px;
-			border: 3px solid #F58A24;
-		}
-		#you-will-4 {
-			width: 320px;
-			height: 300px;
-			left: 456px;
-			top: 346px;
-			border: 3px solid #30C29E;
+
+		@media (max-width: 768px) {
+			#you-will p, #you-will h3 {
+				text-align: left;
+				margin-bottom: 0;
+			}
+			#you-will .row {
+				border-bottom: 1px solid #c9ccd1;
+				width: 75%;
+				margin: 0 auto;
+				padding: 1em 0;
+			}
+			#you-will .col {
+				padding: 0 0.5em;
+			}
 		}
 		
 		#department .row {
@@ -155,19 +249,22 @@
 			margin: auto;
 		}
 		#department .col {
-			margin: 1rem 1.75rem;
 			padding: 5px;
+			max-width: 300px;
 		}
 		#department h5 {
 			font-size: 1.5rem;
-			padding-top: 0.5em;
-			height: 3em;
+			margin-top: 1rem;
+			margin-bottom: 0;
+			padding-top: 0.75em;
+			height: 5rem;
 			font-weight: bold;
 			color: white !important;
 			background-size: 100%;
 			background-repeat: no-repeat;
 			background-position: center;
 		}
+
 		h5#department-1 {
 			background-image: url("img/title-deco-1.png");
 		}
@@ -187,8 +284,14 @@
 			background-image: url("img/title-deco-6.png");
 		}
 		
-		#department p, #experience p, #process p, #division p {			
-			font-size: 1.125rem;
+		@media (min-width: 768px) {
+			#department p, #experience p, #process p, #division p {			
+				font-size: 1.125rem;
+			}
+			#department .col {
+				margin: 1rem 1.75rem;
+				height: 300px;
+			}
 		}
 
 		#department p {
@@ -196,10 +299,54 @@
 			line-height: 1.5em;
 			text-align: left;
 			padding: 1.5em;
-			margin-bottom: 0;
+		}
+
+		
+		@media (max-width: 768px) {
+			#department {
+				background-color: #f2f2f2;
+			}
+			#department h5 {
+				font-size: 18px;
+				margin-top: 0;
+				padding-top: 1em;
+			}
+			#department p {
+				font-weight: normal;
+				line-height: 1.5em;
+				text-align: left;
+				padding: 1em 1.5em;
+				margin-bottom: 0;
+			}
+			#department .shadow {
+				box-shadow: none !important;
+				padding: 0;
+			}
+		}
+
+		#experience * {
+			-ms-overflow-style: none;  /* IE and Edge */
+			scrollbar-width: none;  /* Firefox */
+		}
+
+		#experience *::-webkit-scrollbar {
+			display: none;
+		}
+
+		#experience p, #experience h5 {
+			line-height: 1.7em !important;
+		}
+
+		#experience .tab-content hr {
+			border-width: 1px;
+			width: 100%;
+			/* padding: 0.75rem 0; */
 		}
 
 		@media (min-width: 768px) {
+			#experience h5 {
+				font-size: 1.5rem;
+			}
 			#experience .tab-content {
 				overflow-y: scroll;
 				height: 650px; 
@@ -218,42 +365,73 @@
 				scroll-snap-coordinate: 0% 0%; /* older (Firefox/IE) */  
 				-webkit-scroll-snap-coordinate: 50% 50%; /* older (Safari) */
 			}
-		}
 
-		#experience * {
-			-ms-overflow-style: none;  /* IE and Edge */
-			scrollbar-width: none;  /* Firefox */
+			#experience .tab-content .col {
+				padding-left: 2rem;
+				padding-right: 2rem;
+				align-self: center;
+			}
+
+			#experience-2 {
+				padding-top: 6rem;
+			}
+
+			#experience-2 img {
+				width: 150%;
+			}
+
+			#experience-3 {
+				padding-top: 18rem;
+			}
+
+			#experience-4 {
+				padding-top: 26rem;
+			}		
 		}
 		
-		#experience *::-webkit-scrollbar {
-			display: none;
-		}
-
-		#experience .tab-content .col {
-			padding-left: 2rem;
-			padding-right: 2rem;
-			align-self: center;
-		}
-
-		#experience .tab-content hr {
-			border-width: 1px;
-			padding: 0.75rem 0;
-		}
-
-		#experience-2 {
-			padding-top: 6rem;
-		}
-
-		#experience-2 img {
-			width: 150%;
-		}
-
-		#experience-3 {
-			padding-top: 18rem;
-		}
-
-		#experience-4 {
-			padding-top: 26rem;
+		@media (max-width: 768px) {
+			#experience .pane {
+				margin-top: 2rem;
+				margin-bottom: 4rem;
+				max-width: 91%;
+			}
+			#experience h5 {
+				margin-right: 0.25rem;
+				font-size: 14px;
+				font-weight: bold;
+			}
+			#experience p {
+				font-size: 12px;
+			}
+			#experience .col .col {
+				display: flex;
+				flex-direction: column;
+			}
+			/* #experience .col .col-3 {				
+				padding-left: 15px;
+				padding-right: 10px;
+			} */
+			#experience .col .col-2 {
+				padding-left: 0px;
+				padding-right: 5px;
+				margin-right: 5px;
+			}
+			#experience .col .left {				
+				/* margin-left: -5px; */
+				padding-right: 0px; 
+			}
+			#experience .tab-content hr {
+				margin-top: 0;
+				margin-bottom: 0.5rem;
+			}
+			#experience img {
+				margin-top: auto;
+				margin-bottom: 1rem;
+			}
+			#experience-2 img {
+				width: 150%;
+				margin-left: -10px;
+			}
 		}
 
 		.tabs {
@@ -299,24 +477,40 @@
 		}
 
 		.tab {
-			-webkit-transition: border-color 0.3s linear;
-			transition: border-color 0.3s linear;
-			-webkit-transition-delay: 0.1s;
-					transition-delay: 0.1s;
-			width: 120px;
-			height: 120px;
-			margin: 1.5rem 0;
 			padding: 0;
-			z-index: 1;
 			color: #2b2c33;
 			font-weight: bold;
-			border:  4px solid #fad149;
 			border-radius: 50%;
-			font-size: 1.125rem;
 			display: flex;
 		}
-		.tab:hover, .tab.active {
-			border:  4px solid #f58a24;
+		@media (min-width: 768px) {
+			.tab {
+				-webkit-transition: border-color 0.3s linear;
+				transition: border-color 0.3s linear;
+				-webkit-transition-delay: 0.1s;
+						transition-delay: 0.1s;
+				width: 120px;
+				height: 120px;
+				margin: 1.5rem 0;
+				border:  4px solid #fad149;
+				font-size: 1.125rem;
+				display: flex;
+			}
+			.tab:hover, .tab.active {
+				border:  4px solid #f58a24;
+			}
+		}
+		@media (max-width: 768px) {
+			.tab {
+				width: 60px;
+				height: 60px;
+				/* width: 100%; */
+				border:  2px solid #f58a24;
+				font-size: 12px;
+				display: flex;
+				/* justify-self: start; */
+			}
+
 		}
 
 		.with-indicator {
@@ -329,6 +523,8 @@
 			position: relative;
 			justify-content: center;
 			color: white;
+			margin-right: auto;
+			margin-left: auto;
 		}	
 		
 		#process .circle-4 h3 {
@@ -340,10 +536,9 @@
 			width: 100%;
 			text-align: center;
 		}
-		@media (min-width: 768px) {	
-			#process .circle-4 p {
-				bottom: 150px;
-			}
+		
+		#process .circle-4 p {
+			bottom: 60%;
 		}
 
 		#process .circle-4.bg-img {
@@ -352,27 +547,49 @@
 		}
 
 		#process .col > p {
-			margin-top: 2em;
-			margin-left: -3em;
-			margin-right: -3em;
 			line-height: 1.6em;
 		}
-
+		
 		#process .circle-4 #annotation-1 {
 			position: absolute;
-			bottom: -2rem;
+			bottom: -10%;
+			left: -10%;
+			width: 50%;
 		}
-
 		#process .circle-4 #annotation-2 {
 			position: absolute;
-			bottom: -1rem;
-			right: 1rem;
+			bottom: -10%;
+			right: 10%;
+			height: 50%;
 		}
-
 		#process .circle-4 #annotation-3 {
 			position: absolute;
-			bottom: 2rem;
-			right: -1rem;
+			bottom: 15%;
+			right: -10%;
+			width: 40%;
+		}	
+		
+		@media (min-width: 768px) {
+			#process .col > p {
+				margin-top: 2em;
+				margin-left: -3em;
+				margin-right: -3em;
+			}
+		}
+
+		@media (max-width: 768px) {	
+			#process .circle-4 {
+				width: 180px;
+				height: 180px;
+			}
+			#process .col {
+				margin-top: 1.5rem;
+				margin-bottom: 0.5rem;
+			}
+			#process .col > p {
+				margin-top: 1.5em;
+				margin-bottom: 0;
+			}
 		}
 
 		#division .col * {
@@ -381,10 +598,10 @@
 
 		#division h4 {
 			color: #4f4f4f;
-			padding: 10px 15px;
+			padding: 0.4em 0.75em;
 			width: fit-content;
 			border: 4px solid #F58A24;
-			border-radius: 30px;
+			border-radius: 2em;
 		}
 
 		#division p {
@@ -395,21 +612,51 @@
 			max-width: 130%;
 		}
 
+		@media (max-width: 768px) {
+			#division h1 {
+				margin-bottom: 2em;
+			}
+			#division .container {
+				max-width: 92%;				
+			}
+			#division .col-md-auto {
+				margin-right: 0;
+				padding-right: 0;
+			}	
+			#division h4 {
+				font-size: 16px;
+				border-width: 2px;
+			}
+			#division p {
+				font-size: 12px;
+			}
+			#division img {
+				margin-left: -30%;
+			}
+		}
+
 		#join-us {
 			position: relative;
+			margin-top: 3rem;
 			margin-bottom: 0;
 			padding-top: 4rem;
 			padding-bottom: 2rem;
 		}
 
 		#join-us-deco-1 {
-			top: -122px;
-			left: 230px;
+			top: -4em;
+			left: 12%;
 		}
 
 		#join-us-deco-2 {
-			top: -93px;
-			right: 246px;
+			top: -3em;
+			right: 12%;
+		}
+
+		@media (max-width: 768px) {
+			#join-us-deco-1, #join-us-deco-2 {
+				width: 20%;
+			}			
 		}
 	</style>
 </head>
@@ -462,18 +709,19 @@
 	<div class="site-wrap">
 		<!-- HOME -->
 		<section id="home-section">
-			<div class="container full-width full-height">
-				<img class="fit" src="img/banner-recruitment.png">
-				<div class="row btn-row w-100">
+			<div class="container full-width">
+				<img class="d-none d-md-block fit" src="img/banner-recruitment.png">
+				<img class="d-lg-none fit" src="img/banner-recruitment_m.png">
+				<div class="row btn-row center">
 					<a href="https://forms.gle/MMpoBXhgzaycAhau5"><button class="btn btn-light btn-outline-primary" href="volunteer.html#projects"><h4>報名說明會</h4></button></a>
-					<a href="https://forms.gle/E3Uxm3nx7A3VKpVP8"></a><button class="btn btn-primary"><h4>加入我們</h4></button></div><a>
+					<a href="https://forms.gle/E3Uxm3nx7A3VKpVP8"><button class="btn btn-primary"><h4>加入我們</h4></button></a>
 				</div>
 			</div>
 		</section>
 
 		<!-- INTRO -->
 		<section id="definition-section">
-			<div class="container px-0">
+			<div class="container-fluid">
 				<div class="row justify-content-center">
 					<div class="col col-auto border-right">
 						<h2>AIESEC</h2>
@@ -481,8 +729,9 @@
 					</div>
 					<div class="col col-auto">
 						<h2><i>We care about <blue>Youth</blue> <orange>& LEADERSHIP. </orange></i></h2>
-						<p>全球最大由17-30歲青年運營的非營利組織，成立於 1948 年，<br>
-							透過促進跨文化交流，培養領導力的四大特質：<br>
+						<p>全球最大由17-30歲青年運營的非營利組織，<br class="d-md-none">
+							成立於 1948 年，<br class="d-none d-md-block">
+							透過促進跨文化交流，<br class="d-md-none">培養領導力的四大特質：<br>
 							世界觀、問題解決能力、能激勵他人，更認識自己。</p>
 					</div>
 				</div>
@@ -492,12 +741,12 @@
 		<section class="center">
 			<h1>在 AIESEC，我們培養 #領導力</h1>
 			<p>在任何社團，皆有可能帶領團隊，<br>
-				但在 AIESEC，<br>
-				我們立志讓自己成為能凝聚他人、溫柔堅定、有信念的領導者。</p>
-				
+				但在 AIESEC，<br class="d-none d-md-block">
+				我們立志讓自己成為<br class="d-md-none">
+				能凝聚他人、溫柔堅定、有信念的領導者。</p>				
 			<p>透過部門專案執行、團隊領導經驗、將目光放眼世界，<br>
-				我們培養接軌社會的商管職能，也為關注的社會議題付出行動；</p>
-				
+				我們培養接軌社會的商管職能，<br class="d-md-none">
+				也為關注的社會議題付出行動；</p>				
 			<p>我們期許自己，<br>
 				因為用力實踐，努力成長，而有影響力。</p>
 		</section>
@@ -507,13 +756,16 @@
 			<h2>海外成長與海外實習，<br>
 				我們媒合志工與實習生，激發彼此從經驗中成長。</h2>				
 				
-			<p>我們讓台灣青年走向世界，<br>h3
-				從擔任志工或實習生的經驗中反思成長，在異環境的文化碰撞中學習包容理解，<br>
+			<p>我們讓台灣青年走向世界，<br>
+				從擔任志工或實習生的經驗中反思成長，<br class="d-md-none">
+				在異環境的文化碰撞中學習包容理解，<br>
 				也讓外國人從他們身上認識台灣。</p>
 				
 			<p>我們讓外國青年來到台灣，<br>
-				到企業、社區、非營利組織、國中小學中擔任志工或實習生，<br>
-				在回饋社會的過程中，也為台灣的教育氛圍、公司文化注入更多元的活力。</p>
+				到企業、社區、非營利組織、國中小學<br class="d-md-none">
+				擔任志工或實習生，<br>
+				在回饋社會的過程中，<br class="d-md-none">
+				也為台灣的教育氛圍、公司文化注入更多元的活力。</p>
 
 			<div class="w-45"><img class="fit" src="img/recruitment-1.png"></div>
 		</section>
@@ -522,44 +774,42 @@
 			<h1>我們在尋找這樣的你</h1>
 			<div class="w-60 block-table">
 				<div class="row">
-					<div class="col center">
+					<div class="col col-6 col-md-4 center">
 						<div>
 							<h3>樂於團隊合作</h3>
 							<p>團隊是我們的單位，<br>
 								你不會落單。</p>
 						</div>
 					</div>
-					<div class="col center">
+					<div class="col col-6 col-md-4 center">
 						<div class="bg-yellow">
 							<h3>主動學習</h3>
 							<p>在這裡不怕沒東西學，<br>
 								就怕你不想學。</p>
 						</div>
 					</div>
-					<div class="col center">
+					<div class="col col-6 col-md-4 center">
 						<div>
 							<h3>在乎人與社會</h3>
 							<p>我們關心身邊的夥伴，<br>
 								也在乎社會上發生的事情。</p>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col center">
+					<div class="col col-6 col-md-4 center">
 						<div class="bg-yellow">
 							<h3>摸索未來方向中</h3>
 							<p>把握機會多方嘗試，<br>
 								無論向著何方，都是前進。</p>
 						</div>
 					</div>
-					<div class="col center">
+					<div class="col col-6 col-md-4 center">
 						<div>
 							<h3>不安於現狀</h3>
 							<p>想挑戰自己？<br>
 								恭喜你找對地方了。</p>
 						</div>
 					</div>
-					<div class="col center">
+					<div class="col col-6 col-md-4 center">
 						<div class="bg-yellow">
 							<h3>付諸行動</h3>
 							<p>與其抱怨，<br>
@@ -568,26 +818,28 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col center">
+					<div class="col col-12 col-md-4 center">
 						<div class="bg-orange">
-							<h3 class="mb-0">變得<br>
+							<h3 class="mb-0">變得<br class="d-none d-md-block">
 								# 無懼而有為</h3>
 						</div>
 					</div>
-					<div class="col col-8 center">
+					<div class="col col-12 col-md-8 center">
 						<div class="bg-dark-gray">
-							<p>不斷嘗試，因未知而生的恐懼就會減少；<br>
-								在不斷嘗試的旅程中，我們實踐、我們挫敗、我們成長；</p>							
-							<p><strong>成長，是因為我們曾經恐懼，是為了成為無懼而有為的人。</strong></p>
+							<p>“不斷嘗試，因未知而生的恐懼就會減少”<br>
+								在不斷嘗試的旅程中，<br class="d-md-none">
+								我們實踐、我們挫敗、我們成長；</p>							
+							<p><strong>成長，是因為我們曾經恐懼，<br class="d-md-none">
+								是為了成為無懼而有為的人。</strong></p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="center full-height" id="you-will">			
+		<section class="center" id="you-will">			
 			<h1>在 AIESEC，#你會</h1>
-			<div class="container justify-content-center">
+			<div class="d-none d-md-block full-height container justify-content-center">
 				<div class="rect" id="you-will-1">
 					<p class="left">擁有</p>
 					<h2>緊密連結的<br>
@@ -613,52 +865,85 @@
 					<p class="right">讓你的舞台接軌世界</p>
 				</div>	
 			</div>		
-		</section>
-
-		<section class="center full-height" id="department">	
-			<h1>AIESEC 的部門，#你想加入哪個團隊</h1>
-			<div class="container">
-				<div class="row">
-					<div class="col shadow">
-						<h5 id="department-1">海外成長</h5>
-						<p>我們是夢想與影響力的推手。
-							每年寒暑假送出幾百位台灣大學生，<br>
-							踏上志工與自我探索的旅程，<br>
-							將關懷散播到世界角落。</p>
+			<div class="d-md-none container justify-content-center">
+				<div class="row center">
+					<div class="col-auto">
+						<img src="img/recruitment-you-will.svg">
 					</div>
-					<div class="col shadow">
-						<h5 id="department-2">海外實習</h5>
-						<p>生在小小的島，但我們活在大大的世界。<br>
-							我們負責讓台灣青年可以透過海外實習，<br>
-							步入職場、跨足國際。</p>
-					</div>
-					<div class="col shadow">
-						<h5 id="department-3">行銷</h5>
-						<p>我們在校園市場裡推廣 AIESEC、海外成長與海外實習，<br>
-							讓更多人因為參與 AIESEC 而擁有無可取代的成長經歷。</p>
+					<div class="col">
+						<p><strong>擁有</strong></p>
+						<h3><strong>緊密連結的夥伴</strong></h3>
+						<p>跟完整規劃的團隊經驗</p>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col shadow">
+				<div class="row center">
+					<div class="col-auto">
+						<img src="img/recruitment-you-will.svg">
+					</div>
+					<div class="col">
+						<p><strong>體驗可以</strong></p>
+						<h3><strong>充分發揮的實務運作</strong></h3>
+						<p>打造行銷力與企劃力</p>
+					</div>
+				</div>
+				<div class="row center">
+					<div class="col-auto">
+						<img src="img/recruitment-you-will.svg">
+					</div>
+					<div class="col">
+						<p><strong>經歷</strong></p>
+						<h3><strong>經驗式領導力培訓</strong></h3>
+						<p>讓你兼具軟硬實力</p>
+					</div>
+				</div>
+				<div class="row center">
+					<div class="col-auto">
+						<img src="img/recruitment-you-will.svg">
+					</div>
+					<div class="col">
+						<p><strong>有機會參加</strong></p>
+						<h3><strong>跨國會議與活動</strong></h3>
+						<p>讓你的舞台接軌世界</p>
+					</div>
+				</div>
+			</div>		
+		</section>
+
+		<section class="center" id="department">	
+			<h1>AIESEC 的部門，<br class="d-md-none">
+				#你想加入哪個團隊</h1>
+			<div class="container">
+				<div class="row center">
+					<div class="col col-12 col-md-4 shadow">
+						<h5 id="department-1">海外成長</h5>
+						<p>我們每年送出幾百位台灣青年出發探索世界，在付出與體驗的過程中成長。<br>
+							你將成為夢想的推手，讓更多人因為你而擁有更棒的旅程。</p>
+					</div>
+					<div class="col col-12 col-md-4 shadow">
+						<h5 id="department-2">海外實習</h5>
+						<p>如何讓台灣人才被世界看見？<br>
+							我們推動台灣青年前往海外實習，在提升專業能力的同時，讓視野國際化。</p>
+					</div>
+					<div class="col col-12 col-md-4 shadow">
+						<h5 id="department-3">行銷</h5>
+						<p>我們在校園市場裡推廣 AIESEC、<br class="d-md-none">
+							海外成長與海外實習，<br>
+							讓更多人因為參與 AIESEC 而擁有無可取代的成長經歷。</p>
+					</div>
+					<div class="col col-12 col-md-4 shadow">
 						<h5 id="department-4">全球人才實習</h5>
-						<p>我們負責媒合外國青年來台灣實習，<br>
-							讓他們訓練能力的同時，<br>
-							也為我們即將投入的台灣職場帶入更多元的文化。</p>
+						<p>我們負責讓外國青年來台灣實習，<br>
+							在他們訓練能力的同時，<br>
+							也為我們即將投入的台灣職場<br class="d-md-none">
+							帶入更多元的文化。</p>
 					</div>
-					<div class="col shadow">
+					<div class="col col-12 col-md-4 shadow">
 						<h5 id="department-5">全球青年在地發展</h5>
-						<p>我們連結來自各國的青年<br>
-							一起投入台灣的社會議題，<br>
+						<p>我們連結來自各國的青年<br class="d-none d-md-block">
+							一起投入台灣的社會議題，<br class="d-none d-md-block">
 							諸如偏鄉教育、社區營造。<br>
-							與全台近百間中小學合作、<br>
+							與全台近百間中小學合作、<br class="d-none d-md-block">
 							帶給小孩更多的國際資源。</p>
-					</div>
-					<div class="col shadow">
-						<h5 id="department-6">人才管理</h5>
-						<p>每個校園分會都有數十位成員，我們負責規劃社課、<br>
-							關心每個成員的參與與體驗，<br>
-							幹部培訓與徵選。<br>
-							新成員一學期後可申請加入。</p>
 					</div>
 				</div>
 			</div>
@@ -668,7 +953,7 @@
 			<h1>加入 AIESEC，你可以 #經歷</h1>
 			<div class="container">
 				<div class="row">
-					<div class="col-auto tabs">
+					<div class="col-auto tabs d-none d-md-block">
 						<ul class="nav nav-pills">
 							<li><a class="nav-item tab center active" data-toggle="pill" data-target="#experience-1" tabId=0>第一學期
 								<div class="indicator">
@@ -685,72 +970,92 @@
 						<div class="tab-content">
 							<div class="container-fluid pane fade show active" id="experience-1" tabId=0>
 								<div class="row">
-									<div class="col col-2">
+									<div class="col col-2 col-md-2">
+										<div class="tab center fit d-md-none">第一學期</div>
 										<img class="fit" src="img/recruitment-experience-1.png">
 									</div>
-									<div class="col col-9 left">
+									<div class="col left">
 										<h4>新進成員 Newbie</h4>
 										<hr class="border-blue"/>
-										<h4>部門專案執行｜第一線接觸顧客或企業</h4>
-										<p>從實際經驗，培養銷售、企劃、提案等商業思維，<br>
+										<h5>部門專案執行｜<br class="d-md-none">
+											第一線接觸顧客或企業</h5>
+										<p>從實際經驗，培養銷售、企劃、提案等商業思維，<br class="d-none d-md-block">
 											出發尋找自己有熱情的職涯方向。</p>
-										<h4>寒暑假｜籌辦營隊，帶給國高中學弟妹更大的視野</h4>
+										<h5>寒暑假｜<br class="d-md-none">
+											籌辦營隊，帶給國高中學弟妹更大的視野</h5>
 										<p>參加營隊的籌辦團隊，規劃課程、擔任講師，<br>
 											是許多人在 AIESEC 的難忘回憶。</p>
-										<hr class="border-dark-gray" />
+										<hr class="d-none d-md-block border-dark-gray" />
 									</div>
+									<hr class="d-md-none border-dark-gray" />
 								</div>
 							</div>
-							<div class="container-fluid pane fade" id="experience-2" tabId=1>
+							<div class="container-fluid pane fade show active" id="experience-2" tabId=1>
 								<div class="row">
-									<div class="col col-2">
+									<div class="col col-2 col-md-2">
+										<div class="tab center fit d-md-none">第二學期</div>
 										<img src="img/recruitment-experience-2.png">
 									</div>
 									<div class="col left">
 										<h4>中階幹部 Middle Structure</h4>
 										<hr class="border-blue"/>
-										<h4>成為部門專案領導者｜領導經驗是在 AIESEC 的必修課</h4>
+										<h5>成為部門專案領導者｜<br class="d-md-none">
+											領導經驗是在 AIESEC 的必修課</h5>
 										<p>專案管理與團隊領導，換你帶領新進成員一起執行專案或籌辦營隊，<br>
-										<p>累積更上一層的業務、企劃、行銷實力。<br>
+											累積更上一層的業務、企劃、行銷實力。<br>
 											更重要的是，成為凝聚團隊向前的領導者。</p>
-										<h4>寒暑假｜冬季與夏季大會、海外成長、營隊總召，你想要？</h4>
+										<h5>寒暑假｜冬季與夏季大會、<br class="d-md-none">
+											海外成長、營隊總召，你想要？</h5>
 										<p>每年寒暑，全台灣的 AIESECer 會在五天的大會相聚，彼此經驗分享、共同學習。<br>
 											海外成長是 6 週的志工計畫，挑你想去的國家，踏上幫助他人也體驗文化的旅程。</p>
-										<hr class="border-dark-gray" />
+										<hr class="d-none d-md-block border-dark-gray" />
 									</div>
+									<hr class="d-md-none border-dark-gray" />
 								</div>
 							</div>
-							<div class="container-fluid pane fade" id="experience-3" tabId=2>
+							<div class="container-fluid pane fade show active" id="experience-3" tabId=2>
 								<div class="row">
-									<div class="col col-2">
+									<div class="col col-2 col-md-2">
+										<div class="tab center fit d-md-none">第二學年</div>
 										<img class="fit" src="img/recruitment-experience-3.png">
 									</div>
 									<div class="col left">
 										<h4>部門負責人 Vice President</h4>
 										<hr class="border-blue"/>
-										<h4>策略管理與高強度團隊領導｜領導與管理職能大躍進</h4>
-										<p>AIESEC 畢業的學長姐，沒有人會忘記自己第一次當部門負責人的經歷。<br>
+										<h5>策略管理與高強度團隊領導｜<br class="d-md-none">
+											領導與管理職能大躍進</h5>
+										<p>AIESEC 畢業的學長姐，<br class="d-md-none">
+											沒有人會忘記自己第一次當部門負責人的經歷。<br>
 											這一年，你會主導部門發展方向、規劃策略、帶領團隊執行檢討。<br>
-											同時，你也會是分會的領導團隊成員之一，你們會一起努力，<br>
-											在一次次挫折與成就感中，將分會帶往你們理想中值得感到驕傲的模樣。</p>
-										<hr class="border-dark-gray" />
+											同時，你也會是分會的領導團隊成員之一，<br class="d-md-none">
+											你們會一起努力，<br class="d-none d-md-block">
+											在一次次挫折與成就感中，<br class="d-md-none">
+											將分會帶往你們理想中值得感到驕傲的模樣。</p>
+										<hr class="d-none d-md-block border-dark-gray" />
 									</div>
+									<hr class="d-md-none border-dark-gray" />
 								</div>
 							</div>
-							<div class="container-fluid pane fade" id="experience-4" tabId=3>
+							<div class="container-fluid pane fade show active" id="experience-4" tabId=3>
 								<div class="row">
-									<div class="col col-2">
+									<div class="col col-2 col-md-2">
+										<div class="tab center fit d-md-none">第三學年</div>
 										<img class="fit" src="img/recruitment-experience-4.png">
 									</div>
 									<div class="col left">
 										<h4>分會會長 President / 台灣總會 部門總監 Director</h4>
 										<hr class="border-blue"/>
+										<h5>領導分會或加入總會｜<br class="d-md-none">
+											不只是組織運營，更是無設限的舞台</h5>
 										<p>此時你已經累積了各式實戰經驗、帶過部門，<br>
 											但當一個分會或組織的領導者，挑戰總是不請自來。<br>
-											你會養成反射性解決問題的習慣，能用組織角度思考，有效協調多人團隊，<br>
-											最無可取代的是，你會有完全的自主權，去讓想像實現。</p>
-										<hr class="border-dark-gray" />
+											你會養成反射性解決問題的習慣，<br class="d-md-none">
+											能用組織角度思考，有效協調多人團隊，<br>
+											最無可取代的是，<br class="d-md-none">
+											你會有完全的自主權，去讓想像實現。</p>
+										<hr class="d-none d-md-block border-dark-gray" />
 									</div>
+									<hr class="d-md-none border-dark-gray" />
 								</div>
 							</div>
 						</div>
@@ -763,7 +1068,7 @@
 			<h1>AIESEC 秋季徵才 #流程</h1>
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col">
+					<div class="col col-12 col-md-3">
 						<div class="circle-4 bg-orange">
 							<p>9月及10月</p>
 							<h3>校園說明會</h3>
@@ -774,12 +1079,12 @@
 							還在猶豫要不要加入？<br>
 							把你的疑慮帶來說明會吧！</p>
 					</div>
-					<div class="col">
+					<div class="col col-12 col-md-3">
 						<div class="circle-4 bg-img">
 							<h3>提交申請表</h3>
 						</div>
 					</div>
-					<div class="col">
+					<div class="col col-12 col-md-3">
 						<div class="circle-4 bg-orange">
 							<h3>面試或徵選營</h3>
 							<img id="annotation-2" src="img/deco-arrow-2.svg">
@@ -789,7 +1094,7 @@
 							不用穿正裝 ，<br>
 							英文能力並非重要篩選標準。</p>
 					</div>
-					<div class="col">
+					<div class="col col-12 col-md-3">
 						<div class="circle-4 bg-orange">
 							<p>10/10, 10/11</p>
 							<h3>新生大會</h3>
@@ -808,17 +1113,19 @@
 			<h1>選擇離你最近的校園分會</h1>
 			<div class="container">
 				<div class="row center">
-					<div class="col col-auto align-self-start">
+					<div class="col col-md-auto align-self-start">
 						<h4>台北地區</h4>
-						<p>臺大分會、政大分會、東吳分會、輔仁分會、北大分會</p>
+						<p>臺大分會、政大分會、<br class="d-md-none">
+							東吳分會、輔仁分會、北大分會</p>
 						<h4>桃竹地區</h4>
-						<p>中央分會、元智分會、清華分會、交大分會</p>
+						<p>中央分會、元智分會、<br class="d-md-none">
+							清華分會、交大分會</p>
 						<h4>台中地區</h4>
 						<p>中興分會、逢甲分會</p>
 						<h4>南部地區</h4>
 						<p>中正分會、成大分會、文藻分會</p>
 					</div>
-					<div class="col-2">
+					<div class="col col-5 col-md-2">
 						<img src="img/recruitment-division-map.png">
 					</div>
 				</div>
@@ -905,36 +1212,22 @@
 	const tabs = document.querySelectorAll('.tab')
 	const indicator = document.querySelector('.indicator')
 
-	tabs.forEach(tab => tab.addEventListener('click', e => {		
-		const tabIndex = e.target.getAttribute("tabId")
-		// document.querySelector('.tab.active').classList.remove('active')
-		// // tabs.forEach(tab => tab.classList.remove('active')) 
-		// const tab = e.target
-		// // console.log(tab)
-		// // tab.classList.toggle('active')
-		// const tabIndex = tab.getAttribute("tabId")		
-		// tabIndex = document.querySelector('.tab-content').scrollTop = $('.tab-content').height() * tabIndex
-		console.log(tabIndex)
-		switchPanel(tabIndex)
-	}))
+	if(window.innerWidth >= 768) {
+		tabs.forEach(tab => tab.addEventListener('click', e => {		
+			const tabIndex = e.target.getAttribute("tabId")
+			console.log(tabIndex)
+			switchPanel(tabIndex)
+		}))
 
-	const tabContent = document.querySelector('.tab-content')
-	tabContent.addEventListener('scroll', () => {
-		// const activeTab = document.querySelector('.tab.active')
-		// document.querySelectorAll('.tab').forEach( tab => tab.classList.add('active'))
-		// const tabIndex = parseInt(activeTab.getAttribute("tabId"))
-		const paneHeight = $('#experience .tab-content').height()
-		// console.log(paneHeight)
+		const tabContent = document.querySelector('.tab-content')
+		tabContent.addEventListener('scroll', () => {
+			const paneHeight = $('#experience .tab-content').height()
+			tabIndex = Math.round(document.querySelector('#experience .tab-content').scrollTop / paneHeight)
+			switchPanel(tabIndex)
+		})
 
-		tabIndex = Math.round(document.querySelector('#experience .tab-content').scrollTop / paneHeight)
-		// console.log(tabIndex)
-		// console.log(document.querySelector('.tab-content').scrollTop)
-		// dY = event.deltaY / 30
-		// if(dY > 1 & tabIndex < 3) {
-		// 	tabIndex = tabIndex + 1
-		// }
-		switchPanel(tabIndex)
-	})
+		switchPanel(0)
+	}
 
 	function switchPanel(tabIndex) {
 		activeTab = document.querySelector('#experience .tab.active')
