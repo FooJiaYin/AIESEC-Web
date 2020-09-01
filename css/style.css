@@ -69,6 +69,14 @@ orange {
     background-color: #4f4f4f !important;
 }
 
+.border-blue {
+    border-color: #037df2;
+}
+
+.border-dark-gray {
+    border-color: #4f4f4f;
+}
+
 .card {
     position: relative;
 }

@@ -186,8 +186,12 @@
 		h5#department-6 {
 			background-image: url("img/title-deco-6.png");
 		}
-		#department p {
+		
+		#department p, #experience p, #process p, #division p {			
 			font-size: 1.125rem;
+		}
+
+		#department p {
 			font-weight: bold;
 			line-height: 1.5em;
 			text-align: left;
@@ -195,8 +199,128 @@
 			margin-bottom: 0;
 		}
 
-		#process p {			
+		@media (min-width: 768px) {
+			#experience .tab-content {
+				overflow-y: scroll;
+				height: 650px; 
+				scroll-snap-type: mandatory; /* Firefox */  
+				scroll-snap-type: y mandatory;/* Chrome Canary */ 
+				-ms-scroll-snap-type: mandatory; /* IE/Edge */  
+				-webkit-scroll-snap-type: mandatory; /* Safari */ 
+				-webkit-scroll-snap-destination: 50% 50%;
+			}
+
+			#experience .pane {
+				height: 100%;
+				overflow: hidden;
+				padding-left: 2rem;scroll-snap-align: start;
+				-ms-scroll-snap-align: start;
+				scroll-snap-coordinate: 0% 0%; /* older (Firefox/IE) */  
+				-webkit-scroll-snap-coordinate: 50% 50%; /* older (Safari) */
+			}
+		}
+
+		#experience * {
+			-ms-overflow-style: none;  /* IE and Edge */
+			scrollbar-width: none;  /* Firefox */
+		}
+		
+		#experience *::-webkit-scrollbar {
+			display: none;
+		}
+
+		#experience .tab-content .col {
+			padding-left: 2rem;
+			padding-right: 2rem;
+			align-self: center;
+		}
+
+		#experience .tab-content hr {
+			border-width: 1px;
+			padding: 0.75rem 0;
+		}
+
+		#experience-2 {
+			padding-top: 6rem;
+		}
+
+		#experience-2 img {
+			width: 150%;
+		}
+
+		#experience-3 {
+			padding-top: 18rem;
+		}
+
+		#experience-4 {
+			padding-top: 26rem;
+		}
+
+		.tabs {
+			list-style: none;
+			padding: 0;
+			width: 230px;
+			display: -webkit-box;
+			display: flex;
+			flex-direction: column;
+			margin: 0;
+			border-right: 3px solid #F58A24;
+		}
+		.tabs .indicator {
+			display: block;
+			position: absolute;
+			height: 60px;
+			left: 102px;
+			right: 0;
+			-webkit-transition: height 0.5s linear, -webkit-transform 0.5s cubic-bezier(0.17, 0.8, 0.33, 0.99);
+			transition: height 0.5s linear, -webkit-transform 0.5s cubic-bezier(0.17, 0.8, 0.33, 0.99);
+			transition: transform 0.5s cubic-bezier(0.17, 0.8, 0.33, 0.99), height 0.5s linear;
+			transition: transform 0.5s cubic-bezier(0.17, 0.8, 0.33, 0.99), height 0.5s linear, -webkit-transform 0.5s cubic-bezier(0.17, 0.8, 0.33, 0.99);
+			z-index: 0;
+		}
+
+		.tabs #indicator-circle {	
+			position: absolute;
+			height: 60px;
+			width: 60px;
+			top: 0;
+			left: 0;		
+			background: #f58a24 !important;
+			border-radius: 50%;
+		}
+
+		.tabs #indicator-line {
+			position: absolute;
+			width: 82px;
+			height: 0;
+			top: 50%;
+			left: 46px;
+			border: 1.5px solid #F58A24;
+		}
+
+		.tab {
+			-webkit-transition: border-color 0.3s linear;
+			transition: border-color 0.3s linear;
+			-webkit-transition-delay: 0.1s;
+					transition-delay: 0.1s;
+			width: 120px;
+			height: 120px;
+			margin: 1.5rem 0;
+			padding: 0;
+			z-index: 1;
+			color: #2b2c33;
+			font-weight: bold;
+			border:  4px solid #fad149;
+			border-radius: 50%;
 			font-size: 1.125rem;
+			display: flex;
+		}
+		.tab:hover, .tab.active {
+			border:  4px solid #f58a24;
+		}
+
+		.with-indicator {
+			position: relative;
 		}
 
 		#process .circle-4 {
@@ -264,7 +388,6 @@
 		}
 
 		#division p {
-			font-size: 1.125rem;
 			margin-left: 15px;
 		}
 
@@ -541,14 +664,100 @@
 			</div>
 		</section>
 
-		<!-- <section class="center" id="process">
+		<section class="center" id="experience">
 			<h1>加入 AIESEC，你可以 #經歷</h1>
 			<div class="container">
 				<div class="row">
-					<
+					<div class="col-auto tabs">
+						<ul class="nav nav-pills">
+							<li><a class="nav-item tab center active" data-toggle="pill" data-target="#experience-1" tabId=0>第一學期
+								<div class="indicator">
+									<div id="indicator-circle" class="bg-orange"></div>
+									<div id="indicator-line"></div>
+								</div>
+							</a></li>
+							<li><a class="nav-item tab center" data-toggle="pill" data-target="#experience-2" tabId=1>第二學期</a></li>
+							<li><a class="nav-item tab center" data-toggle="pill" data-target="#experience-3" tabId=2>第二學年</a></li>
+							<li><a class="nav-item tab center" data-toggle="pill" data-target="#experience-4" tabId=3>第三學年</a></li>
+						</ul>
+					</div>
+					<div class="col">
+						<div class="tab-content">
+							<div class="pane fade show active" id="experience-1" tabId=0>
+								<div class="row">
+									<div class="col col-2">
+										<img class="fit" src="img/recruitment-experience-1.png">
+									</div>
+									<div class="col col-9 left">
+										<h4>新進成員 Newbie</h4>
+										<hr class="border-blue"/>
+										<h4>部門專案執行｜第一線接觸顧客或企業</h4>
+										<p>從實際經驗，培養銷售、企劃、提案等商業思維，<br>
+											出發尋找自己有熱情的職涯方向。</p>
+										<h4>寒暑假｜籌辦營隊，帶給國高中學弟妹更大的視野</h4>
+										<p>參加營隊的籌辦團隊，規劃課程、擔任講師，<br>
+											是許多人在 AIESEC 的難忘回憶。</p>
+										<hr class="border-dark-gray" />
+									</div>
+								</div>
+							</div>
+							<div class="pane fade" id="experience-2" tabId=1>
+								<div class="row">
+									<div class="col col-2">
+										<img src="img/recruitment-experience-2.png">
+									</div>
+									<div class="col left">
+										<h4>中階幹部 Middle Structure</h4>
+										<hr class="border-blue"/>
+										<h4>成為部門專案領導者｜領導經驗是在 AIESEC 的必修課</h4>
+										<p>專案管理與團隊領導，換你帶領新進成員一起執行專案或籌辦營隊，<br>
+										<p>累積更上一層的業務、企劃、行銷實力。<br>
+											更重要的是，成為凝聚團隊向前的領導者。</p>
+										<h4>寒暑假｜冬季與夏季大會、海外成長、營隊總召，你想要？</h4>
+										<p>每年寒暑，全台灣的 AIESECer 會在五天的大會相聚，彼此經驗分享、共同學習。<br>
+											海外成長是 6 週的志工計畫，挑你想去的國家，踏上幫助他人也體驗文化的旅程。</p>
+										<hr class="border-dark-gray" />
+									</div>
+								</div>
+							</div>
+							<div class="pane fade" id="experience-3" tabId=2>
+								<div class="row">
+									<div class="col col-2">
+										<img class="fit" src="img/recruitment-experience-3.png">
+									</div>
+									<div class="col left">
+										<h4>部門負責人 Vice President</h4>
+										<hr class="border-blue"/>
+										<h4>策略管理與高強度團隊領導｜領導與管理職能大躍進</h4>
+										<p>AIESEC 畢業的學長姐，沒有人會忘記自己第一次當部門負責人的經歷。<br>
+											這一年，你會主導部門發展方向、規劃策略、帶領團隊執行檢討。<br>
+											同時，你也會是分會的領導團隊成員之一，你們會一起努力，<br>
+											在一次次挫折與成就感中，將分會帶往你們理想中值得感到驕傲的模樣。</p>
+										<hr class="border-dark-gray" />
+									</div>
+								</div>
+							</div>
+							<div class="pane fade" id="experience-4" tabId=3>
+								<div class="row">
+									<div class="col col-2">
+										<img class="fit" src="img/recruitment-experience-4.png">
+									</div>
+									<div class="col left">
+										<h4>分會會長 President / 台灣總會 部門總監 Director</h4>
+										<hr class="border-blue"/>
+										<p>此時你已經累積了各式實戰經驗、帶過部門，<br>
+											但當一個分會或組織的領導者，挑戰總是不請自來。<br>
+											你會養成反射性解決問題的習慣，能用組織角度思考，有效協調多人團隊，<br>
+											最無可取代的是，你會有完全的自主權，去讓想像實現。</p>
+										<hr class="border-dark-gray" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</section> -->
+		</section>
 
 		<section class="center" id="process">
 			<h1>AIESEC 秋季徵才 #流程</h1>
@@ -689,5 +898,62 @@
     <script src="js/jquery.min.js"></script>
 
 </body>
+
+<script>
+	const tabs = document.querySelectorAll('.tab')
+	const indicator = document.querySelector('.indicator')
+
+	tabs.forEach(tab => tab.addEventListener('click', e => {		
+		const tabIndex = e.target.getAttribute("tabId")
+		// document.querySelector('.tab.active').classList.remove('active')
+		// // tabs.forEach(tab => tab.classList.remove('active')) 
+		// const tab = e.target
+		// // console.log(tab)
+		// // tab.classList.toggle('active')
+		// const tabIndex = tab.getAttribute("tabId")		
+		// tabIndex = document.querySelector('.tab-content').scrollTop = $('.tab-content').height() * tabIndex
+		console.log(tabIndex)
+		switchPanel(tabIndex)
+	}))
+
+	const tabContent = document.querySelector('.tab-content')
+	tabContent.addEventListener('scroll', () => {
+		// const activeTab = document.querySelector('.tab.active')
+		// document.querySelectorAll('.tab').forEach( tab => tab.classList.add('active'))
+		// const tabIndex = parseInt(activeTab.getAttribute("tabId"))
+		const paneHeight = $('#experience .tab-content').height()
+		// console.log(paneHeight)
+
+		tabIndex = Math.round(document.querySelector('#experience .tab-content').scrollTop / paneHeight)
+		// console.log(tabIndex)
+		// console.log(document.querySelector('.tab-content').scrollTop)
+		// dY = event.deltaY / 30
+		// if(dY > 1 & tabIndex < 3) {
+		// 	tabIndex = tabIndex + 1
+		// }
+		switchPanel(tabIndex)
+	})
+
+	function switchPanel(tabIndex) {
+		activeTab = document.querySelector('#experience .tab.active')
+		if (activeTab.getAttribute("tabId") == tabIndex) return;		
+		activeTab.classList.remove('active')
+		const tab = document.querySelector('#experience .tab[tabId="' + tabIndex + '"]')
+		document.querySelector('#experience .pane.active').classList.remove('active')
+		document.querySelector('#experience .pane.show').classList.remove('show')
+		// console.log(tab)
+		const pane = document.querySelector('#experience .pane[tabId="' + tabIndex + '"]')
+		tab.classList.add('active')
+		pane.classList.add('active')
+		pane.classList.add('show')
+		const tabHeight = getComputedStyle(tab).getPropertyValue('height') 
+		const tabMargin = getComputedStyle(tab).getPropertyValue('margin-bottom')		
+		// console.log(tabIndex)
+		indicator.style.transform = `translate3d(0, calc((${tabHeight} + ${tabMargin} * 2) * ${tabIndex}), 0)`
+		// console.log(indicator.style.transform)
+		document.querySelector('.tab-content').scrollTop = $('.tab-content').height() * tabIndex
+	}
+
+</script>
 
 </html>
