@@ -310,6 +310,7 @@ img.icon {
     background-color: #4f4f4f;
     min-height: fit-content;
     margin-bottom: 0 !important;
+    padding-bottom: 0.5rem !important;
 }
 
 #footer-section > .container {
