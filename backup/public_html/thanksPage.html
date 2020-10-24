@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WNBV7M3');
+
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <title>謝謝您的報名</title>
+
+    <!--    css for this page-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/recruitment.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon2.png" />
+</head>
+
+<body style="background-color: #f7f7f7;height: 100%" >
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNBV7M3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <div class="jumbotron text-center" style="max-height: 100%">
+        <h2 class="">Thank You! 謝謝您的報名！</h2>
+        <p class="lead"><strong>請檢查您所填寫的信箱</strong> 獲得更多資訊及完成接下來的步驟。</p>
+        <hr>
+        <p>
+            任何疑問？ <a href="https://mail.google.com/mail/?view=cm&fs=1&to=taiwan@aiesec.net" target="_blank">聯絡我們</a>
+        </p>
+        <p class="lead">
+            <a class="btn btn-primary btn-sm" href="index.html" role="button">回到首頁</a>
+        </p>
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <script>
+        jQuery.get("https://auth.aiesec.org.tw/?entry=campaignInfos&type=gt", function(data) {
+
+
+
+            $.each(data, function(index, value) {
+                console.log(value);
+
+                $('#event').append(
+                    `<option value="${index}">${value}</option> <br>`
+                )
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

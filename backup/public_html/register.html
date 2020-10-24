@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AIESEC in taiwan - Register</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon2.png" />
+
+</head>
+
+<body>
+    <div class="row">
+        <div class="container">
+            <table class="table table-borderless">
+                <tr>
+                    <td><input class="form-control col-m-6" type="text" maxlength="50" name="last_name" required oninvalid="this.setCustomValidity('輸入您的中文姓氏')" oninput="setCustomValidity('')" placeholder="姓氏">
+                    </td>
+                    <td><input class="form-control" type="text" name="first_name" maxlength="50" required oninvalid="this.setCustomValidity('輸入您的中文名字')" oninput="setCustomValidity('')" placeholder="名字">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input class="form-control" type="text" maxlength="50" name="english_last_name" required oninvalid="this.setCustomValidity('輸入您護照上的英文姓氏')" oninput="setCustomValidity('')" placeholder="護照上的英文姓氏">
+                    </td>
+                    <td><input class="form-control" type="text" name="english_first_name" maxlength="50" required oninvalid="this.setCustomValidity('輸入您護照上的英文名字')" oninput="setCustomValidity('')" placeholder="護照上的英文名字">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input class="form-control" type="email" name="email" maxlength="50" required oninvalid="this.setCustomValidity('請輸入有效的電子郵件')" oninput="setCustomValidity('')" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" placeholder="電子郵件">
+                    </td>
+                    <td><input class="form-control" type="text" name="phone" maxlength="50" required oninvalid="this.setCustomValidity('輸入一個有效的電話號碼, 格式：扣掉0，如960650075，共9碼')" oninput="setCustomValidity('')" pattern="(?:9)[0-9]{8}" placeholder="電話號碼 (格式：扣掉0，如960650075，共9碼)">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input class="form-control" type="password" name="password" required oninvalid="this.setCustomValidity('密碼必須至少8個字符，一個數字，一個大寫字母和一個小寫字母')" oninput="setCustomValidity('')" pattern="(?=^.{8,}$)^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder="密碼">
+                    </td>
+                    <td> <select id="Gender__c" class="form-control" name="00N70000002U9LK" title="Gender">
+                            <option selected="selected">性別</option>
+                            <option value="Male">生理男</option>
+                            <option value="Female">生理女</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><select class="form-control" id="00N70000002UFkc" name="00N70000002UFkc" title="大專院校">
+                            <option selected="selected">大專院校</option>
+                        </select>
+                    </td>
+                    <td><input class="form-control" id="localcommittee" name="localcommittee" title="指定分會" type="text" placeholder="指定分會(自動選擇)" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input class="form-control" type="text" name="Bachelor_Major_Name__c" maxlength="50" required oninvalid="this.setCustomValidity('輸入您的大專院校主修及副修科系')" oninput="setCustomValidity('')" placeholder="大專院校主修及副修科系">
+                    </td>
+                    <td> <select class="form-control" id="00N70000002UFlp" name="00N70000002UFlp" title="Current/Final Degree">
+                            <option selected="selected">現在或最終學位</option>
+                            <option value="Bachelor">Bachelor 大專院校</option>
+                            <option value="Master">Master 碩士</option>
+                            <option value="Doctor">Doctor 博士</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <select class="form-control" id="00N70000002UGB9" name="00N70000002UGB9" title="University/College/School Entrance Year">
+                            <option selected="selected">入學年</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                        </select>
+                    </td>
+                    <td><input class="form-control" type="text" name="00N70000003CuDe" maxlength="70" required oninvalid="this.setCustomValidity('輸入一個有效的Facebook 名稱, Example: 古淮語')" oninput="setCustomValidity('')" placeholder="Facebook 名稱, Example: 古淮語">
+                    </td>
+                </tr>
+                <tr>
+                    <td> <select class="form-control" id="Information_Channel__c" title="Information Channel" name="00N70000002UFlz[]" required="">
+                            <option selected="selected">請問你是從何處決定報名海外成長的呢?</option>
+                            <option name="00N70000002UFlz[]" value="AIESEC官方網站">AIESEC官方網站</option>
+                            <option name="00N70000002UFlz[]" value="AIESEC in Taiwan粉絲專頁">AIESEC in Taiwan粉絲專頁</option>
+                            <option name="00N70000002UFlz[]" value="海外成長計畫粉絲專頁">海外成長計畫粉絲專頁</option>
+                            <option name="00N70000002UFlz[]" value="AIESEC分會粉絲專頁">AIESEC分會粉絲專頁</option>
+                            <option name="00N70000002UFlz[]" value="Facebook廣告">Facebook廣告</option>
+                            <option name="00N70000002UFlz[]" value="親朋好友介紹">親朋好友介紹</option>
+                            <option name="00N70000002UFlz[]" value="海報">海報</option>
+                            <option name="00N70000002UFlz[]" value="宣傳單">宣傳單/三摺頁</option>
+                            <option name="00N70000002UFlz[]" value="校園擺攤">校園擺攤</option>
+                            <option name="00N70000002UFlz[]" value="學校單位">學校單位</option>
+                            <option name="00N70000002UFlz[]" value="學校臉書社團">學校臉書社團</option>
+                            <option name="00N70000002UFlz[]" value="曾經參與過AIESEC舉辦的活動">曾經參與過AIESEC舉辦的活動</option>
+                            <option name="00N70000002UFlz[]" value="看過AIESEC宣傳影片">看過AIESEC宣傳影片</option>
+                            <option name="00N70000002UFlz[]" value="其他">其他</option>
+                        </select>
+                    </td>
+
+
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                我已閱讀並接受<a href="https://opportunities.aiesec.org./assests/terms.pdf" download> 條款和條件。</a>
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+
+                        <button type="button" class="btn btn-primary" style="width:300px;"><a>繳交報名表</a></button>
+
+                    </td>
+                    <td></td>
+                </tr>
+
+
+
+
+
+            </table>
+        </div>
+    </div>
+
+</body></html>

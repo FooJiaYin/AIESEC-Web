@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>管理者系統</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link rel="icon" href="https://www.aiesec.in/wp-content/uploads/2018/03/favicon.png" type="image/png">
+<link rel="stylesheet" href="css1/animate.css">
+<style>
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: "微軟正黑體";
+    font-weight: 600;
+    font-size: 20px;        
+}
+
+li a.active {
+    background-color: #f48924;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+h1.main{
+    font-family: "微軟正黑體";
+    font-weight: 600;
+    font-size: 36px;
+    color: #f48924;
+
+    }
+h2.title{
+    font-family: "微軟正黑體";
+    font-weight: 600;
+    font-size: 18px; 
+    margin-bottom: 2%;
+    margin-right: 20px;
+    }
+.fresh{
+     font-family: "微軟正黑體";  
+    margin-top: 1%;
+    }
+h1.title1{
+   font-family: "微軟正黑體";  
+    font-weight: 800;
+    margin-bottom: 3%;
+    color:#f85a40;
+    font-size: 18px;
+    }
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" style="color:white;"><img src="img/aiesec%20logo.png" height=50%
+    width= 50% padding-top=10%> 管理功能</a></li>
+  <li><a href="#main">主頁面</a></li>
+  <li><a href="#GV">海外成長</a></li>
+  <li><a href="#GT">海外實習</a></li>
+  <li><a href="#GE">海外青創</a></li>
+  <li><a href="#account">帳號管理</a></li>
+  <li><a href="index.html">登出</a></li>
+</ul>
+
+<div style="margin-left:20%;padding:1px 16px;height:5000px;">
+ <section id="main" class="wow fadeIn" style="animation-duration: 1.0s">
+<!--  主頁面 -->
+  <h1 class="main">主頁面</h1>
+    <div style="height:50%; padding-top: 50px">
+    
+    <h1 class="title1">頁首</h1>
+    <!-- 頁首標題 -->
+    <h2 class="title">頁首標題 : </h2>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+
+   <br>
+   <!-- 頁首副標題 -->
+    <h2 class="title">頁首副標題 : </h2>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+
+    <br>
+<!-- 頁首照片  -->   
+<h2 class="title">頁首照片</h2>
+  <input type="file">
+  <br> <br>
+  <button type="button" class="btn btn-primary btn-md">更新</button>
+     <hr>
+<!-- 最新消息 -->
+   <h1 class="title1">最新消息</h1>
+   
+ <!-- 消息內容 -->  
+    <h2 class="title">消息內容</h2>
+    <textarea class="form-control" rows="5" id="comment"></textarea>
+   <br>
+    <!-- 消息照片 -->
+    <h2 class="title">消息照片</h2>
+  <input type="file">
+  <br> <br>
+  <button type="button" class="btn btn-primary btn-md">更新</button>
+     <hr>
+     </div>
+    <!-- 主頁面結束 -->
+    <br><br><br><br><br>
+
+    </section>
+    
+    
+    
+<!--  海外成長 -->   
+     <section id="GV" class="wow fadeIn" style="animation-duration: 1.0s">
+  <h1 class="main">海外成長</h1>
+  <h1 class="title1">頁首</h1>
+    <!-- 頁首標題 -->
+    <h2 class="title">頁首標題 : </h2>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+
+   <br>
+   <!-- 頁首副標題 -->
+    <h2 class="title">頁首副標題 : </h2>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+
+    <br>
+<!-- 頁首照片  -->   
+<h2 class="title">頁首照片</h2>
+  <input type="file">
+  <br> <br>
+  <button type="button" class="btn btn-primary btn-md">更新</button>
+     <hr>
+     <h1 class="title1">專案跑馬燈</h1>
+
+  
+    <div class="form-group row " style="margin-left:0%">
+        <h2 class="title">專案名稱 :</h2>
+      <div class="col-xs-3">
+
+        <input class="form-control" id="ex2" type="text">
+      </div>
+      <hr>
+
+      <hr>
+
+      </div>
+     
+
+
+<input type="file">
+ <br> <br>
+  
+  <button type="button" class="btn btn-primary btn-md">更新</button>
+
+
+  <hr>
+  <h1 class="title1">問與答</h1>
+    <div class="form-group row " style="margin-left:0%">
+       
+         <h2 class="title">問題 :</h2>
+      <div class="col-xs-3">
+        <input class="form-control" id="ex2" type="text">
+      </div>
+      
+      </div>
+    <div class="form-group row " style="margin-left:0%">
+       
+         <h2 class="title">答案 :</h2>
+      <div class="col-xs-3">
+        <input class="form-control" id="ex2" type="text">
+      </div>
+      
+      </div>
+        <button type="button" class="btn btn-primary btn-md">更新</button>
+        <hr>
+    </section>
+
+ <section id="GT" class="wow fadeIn" style="animation-duration: 1.0s">
+  <h1 class="main">海外實習</h1>
+      <h1 class="title1">頁首</h1>
+    <!-- 頁首標題 -->
+    <h2 class="title">頁首標題 : </h2>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+
+   <br>
+   <!-- 頁首副標題 -->
+    <h2 class="title">頁首副標題 : </h2>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+
+    <br>
+<!-- 頁首照片  -->   
+<h2 class="title">頁首照片</h2>
+  <input type="file">
+  <br> <br>
+  <button type="button" class="btn btn-primary btn-md">更新</button>
+     <hr>
+     <h1 class="title1">專案跑馬燈</h1>
+
+  
+    <div class="form-group row " style="margin-left:0%">
+        <h2 class="title">專案名稱 :</h2>
+      <div class="col-xs-3">
+
+        <input class="form-control" id="ex2" type="text">
+      </div>
+      <hr>
+
+      <hr>
+
+      </div>
+     
+
+
+<input type="file">
+ <br> <br>
+  
+  <button type="button" class="btn btn-primary btn-md">更新</button>
+
+
+  <hr>
+  <h1 class="title1">問與答</h1>
+    <div class="form-group row " style="margin-left:0%">
+       
+         <h2 class="title">問題 :</h2>
+      <div class="col-xs-3">
+        <input class="form-control" id="ex2" type="text">
+      </div>
+      
+      </div>
+    <div class="form-group row " style="margin-left:0%">
+       
+         <h2 class="title">答案 :</h2>
+      <div class="col-xs-3">
+        <input class="form-control" id="ex2" type="text">
+      </div>
+      
+      </div>
+        <button type="button" class="btn btn-primary btn-md">更新</button>
+        <hr>
+
+    </section>
+    
+    
+    
+  <!--   海外青創 -->
+    <section id="GE" class="wow fadeIn" style="animation-duration: 1.0s">
+  <h1 class="main">海外青創</h1>
+   
+   
+     <h1 class="title1">頁首</h1>
+    <!-- 頁首標題 -->
+    <h2 class="title">頁首標題 : </h2>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+
+   <br>
+   <!-- 頁首副標題 -->
+    <h2 class="title">頁首副標題 : </h2>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+
+    <br>
+<!-- 頁首照片  -->   
+<h2 class="title">頁首照片</h2>
+  <input type="file">
+  <br> <br>
+  <button type="button" class="btn btn-primary btn-md">更新</button>
+     <hr>
+     <h1 class="title1">專案跑馬燈</h1>
+
+  
+    <div class="form-group row " style="margin-left:0%">
+        <h2 class="title">專案名稱 :</h2>
+      <div class="col-xs-3">
+
+        <input class="form-control" id="ex2" type="text">
+      </div>
+      <hr>
+
+      <hr>
+
+      </div>
+     
+
+
+<input type="file">
+ <br> <br>
+  
+  <button type="button" class="btn btn-primary btn-md">更新</button>
+
+
+  <hr>
+  <h1 class="title1">問與答</h1>
+    <div class="form-group row " style="margin-left:0%">
+       
+         <h2 class="title">問題 :</h2>
+      <div class="col-xs-3">
+        <input class="form-control" id="ex2" type="text">
+      </div>
+      
+      </div>
+    <div class="form-group row " style="margin-left:0%">
+       
+         <h2 class="title">答案 :</h2>
+      <div class="col-xs-3">
+        <input class="form-control" id="ex2" type="text">
+      </div>
+      
+      </div>
+        <button type="button" class="btn btn-primary btn-md">更新</button>
+        <hr>
+
+    </section>
+
+
+
+<!-- 帳號管理 -->
+ <section id="account" class="wow fadeIn" style="animation-duration: 1.0s">
+  <h1 class="main">帳號管理</h1>
+  <iframe src="ad_logined_new.html" width="100%" height="800px" frameborder="0"></iframe>
+
+    </section>
+
+
+</div>
+<!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js1/creative.min.js"></script>
+    <script src="js1/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    
+</body>
+</html>

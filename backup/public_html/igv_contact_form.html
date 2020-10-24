@@ -1,0 +1,82 @@
+<div style="position: relative;">
+    <form id="igv-contact-form" action="mailto:taiwan@aiesec.net" method="POST" accept-charset="UTF-8">
+        <div class="g-grid">
+            <div class="g-block size-66 e-form-title">
+                <h2>連絡我們</h2>
+            </div>
+        </div>
+        <div class="g-grid">
+            <div class="g-block size-33 e-form-element">
+                <input id="name" type="text" name="name" required placeholder="姓名">
+            </div>
+            <div class="g-block size-33 e-form-element">
+                <input id="email" type="text" name="email" required placeholder="電子郵件">
+            </div>
+            <div class="g-block size-33 e-form-element">
+                <select id="lc-mail" name="lc-mail">
+                    <option selected="selected">選擇合作分會</option>
+                    <option value="aiesec.ntpu7@aiesec.net">台北大學 | aiesec.ntpu7@aiesec.net</option>
+                    <option value="taiwan_nccu.igv@aiesec.net">政治大學 | taiwan_nccu.igv@aiesec.net</option>
+                    <option value="aiesecfju.igv@aiesec.net">輔仁大學 | aiesecfju.igv@aiesec.net</option>
+                    <option value="igv.ntu@aiesec.net">台灣大學 | igv.ntu@aiesec.net</option>
+                    <option value="igv.scu@aiesec.net">東吳大學 | igv.scu@aiesec.net</option>
+                    <option value="aiesec.mcu@aiesec.net">銘傳大學 | aiesec.mcu@aiesec.net</option>
+                    <option value="ncu.igv@aiesec.net">中央大學 | ncu.igv@aiesec.net</option>
+                    <option value="taiwanyzu.igv@aiesec.net">元智大學 | taiwanyzu.igv@aiesec.net</option>
+                    <option value="taiwannthu.igv@aiesec.net">清華大學 | taiwannthu.igv@aiesec.net</option>
+                    <option value="igv.nctu@aiesec.net">交通大學 | igv.nctu@aiesec.net</option>
+                    <option value="aiesec.thu2@aiesec.net">東海大學 | aiesec.thu2@aiesec.net"</option>
+                    <option value="nchu.igv@aiesec.net">中興大學 | nchu.igv@aiesec.net</option>
+                    <option value="taiwan.fcu.igv@aiesec.net">逢甲大學 | taiwan.fcu.igv@aiesec.net</option>
+                    <option value="taiwanccu.igv@aiesec.net">中正大學 | taiwanccu.igv@aiesec.net</option>
+                    <option value="aiesecncku.igv@aiesec.net">成功大學 | aiesecncku.igv@aiesec.net</option>
+                    <option value="wzu@aiesec.net">文藻外語大學 | wzu@aiesec.net</option>
+                    <option value="aiesec.nsysu@aiesec.net">中山大學 | aiesec.nsysu@aiesec.net</option>
+                </select>
+            </div>
+        </div>
+        <div class="g-grid">
+            <div class="g-block size-100 e-form-element">
+                <textarea rows="5" name="comments" required placeholder="您從事的產業、希望我們能如何協助您、請問您在尋找哪類型的國際志工?"></textarea>
+            </div>
+        </div>
+        <div class="g-grid">
+            <div class="g-block size-100 e-form-submit">
+                <input type="submit" id="submit" name="submit" clicked="false" value="開始合作">
+            </div>
+        </div>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i" crossorigin="anonymous"></script>
+
+    <script type='text/javascript'>
+        jQuery(document).ready(function($) {
+            jQuery('#submit_button').click(function($) {
+                jQuery('#submit_button').attr('clicked', 'true');
+            });
+
+            jQuery('#lc-mail').change(function($) {
+                jQuery('#igv-contact-form').attr('action', 'mailto:' + jQuery('#lc-mail').val());
+            });
+
+            var options = {
+                beforeSubmit: function(arr, $form, options) {
+                    jQuery('#form-loading').show();
+                },
+                dataType: "json",
+                success: function(res, status, xhr) {
+                    if (confirm("謝謝您連絡我們，我們的團隊會在24小時內回覆您")) {
+                        window.location.reload();
+                    }
+                },
+                error: function(xhr, status, err) {
+                    if (confirm(err)) {
+                        confirm("錯誤");
+                        window.location.reload();
+                    }
+                }
+            };
+            //jQuery('#igv-contact-form').ajaxForm(options);
+        });
+    </script>
+</div>

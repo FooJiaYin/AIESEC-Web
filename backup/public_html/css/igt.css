@@ -1,0 +1,535 @@
+/*!
+ * Start Bootstrap - Creative v5.0.1 (https://startbootstrap.com/template-overviews/creative)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
+ */
+
+body {
+    width: 100%;
+
+    overflow-x: hidden;
+}
+
+.container-igt {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 90%;
+    max-width: 1140px; // 隨螢幕尺寸而變，當螢幕尺寸 ≥ 1200px 時是 1140px。
+}
+
+hr {
+    max-width: 100%;
+    border-width: 1px;
+    align-content: left;
+    border-color: rgb(240, 95, 64)
+}
+
+hr.light {
+    border-color: #fff
+}
+
+hr.gray {
+    border-color: #b3b3b3
+}
+
+a {
+    color: #f05f40;
+    -webkit-transition: all .2s;
+    transition: all .2s
+}
+
+a:hover {
+    color: #f05f40
+}
+
+section {
+    padding: 0rem 0
+}
+
+.section-heading {
+    margin-top: 0;
+}
+
+header.igtlanding {
+    padding-top: 6rem;
+    padding-bottom: calc(7rem - 56px);
+    background-image: url(../img/igtheader.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    opacity: 0.8;
+}
+
+header.masthead hr {
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+header.masthead h1 {
+    font-size: 2rem
+}
+
+header.masthead p {
+    font-weight: 300
+}
+
+@media (min-width:768px) {
+    header.masthead p {
+        font-size: 1.15rem
+    }
+}
+
+@media (min-width:992px) {
+    header.masthead {
+        height: 100vh;
+        min-height: 650px;
+        padding-top: 0;
+        padding-bottom: 0
+    }
+
+    header.masthead h1 {
+        font-size: 3rem
+    }
+}
+
+@media (min-width:1200px) {
+    header.masthead h1 {
+        font-size: 4rem
+    }
+}
+
+.service-box {
+    max-width: 400px
+}
+
+.portfolio-box {
+    position: relative;
+    display: block;
+    max-width: 650px;
+    margin: 0 auto
+}
+
+.btn {
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 300px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif, Microsoft JhengHei
+}
+
+.btn-xl {
+    padding: 1rem 2rem
+}
+
+.btn-primary {
+    background-color: #037ef3;
+    border-color: #037ef3;
+}
+
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover {
+    color: #fff;
+    background-color: #037ef3 !important;
+}
+
+.btn-primary:active,
+.btn-primary:focus {
+    -webkit-box-shadow: 0 0 0 .2rem rgba(2, 79, 151, .7) !important;
+    box-shadow: 0 0 0 .2rem rgba(2, 79, 151, .7) !important
+}
+
+.stat-wrap {
+    background: #0A8Ea0;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 100%;
+}
+
+.stat-number {
+    font-family: sans-serif;
+    display: inline-block;
+    font-size: 55px;
+    font-weight: 650;
+    color: white;
+}
+
+.count-font {
+    font-family: Microsoft JhengHei;
+    color: white;
+    font-size: 19px;
+    font-weight: 650;
+}
+
+.sdg-font {
+    color: #666666;
+    font-family: 微軟正黑體;
+    font-size: 18px;
+}
+
+.section-title {
+    font-family: Microsoft JhengHei;
+    color: #404040;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.section-text {
+    font-family: Microsoft JhengHei;
+    color: #666666;
+    font-size: 18px;
+}
+
+.igtinfo-text {
+    font-family: Microsoft JhengHei;
+    color: #666666;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    margin-top: 1em;
+}
+
+.why-choose-text {
+    font-family: Microsoft JhengHei;
+    font-size: 12px;
+}
+
+.line-height-35 {
+    line-height: 35px;
+}
+
+.line-height-40 {
+    line-height: 40px;
+}
+
+.section-grbacolor {
+    background-color: #e6e6e6
+}
+
+.section-whbacolor {
+    background-color: #fff;
+}
+
+.section-applybacolor {
+    background-color: #fff;
+
+}
+
+.section-video {
+    margin: 0rem;
+    padding: 2rem 0;
+}
+
+.section-count {
+    padding: 1rem 0;
+    background-color: #0A8EA0;
+}
+
+.header-font {
+    font-family: Microsoft JhengHei;
+    color: #f2f2f2;
+    font-weight: 800;
+}
+
+.microfont {
+    font-family: Microsoft JhengHei;
+}
+
+p.fontsize {
+    font-size: 20px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    font-family: Microsoft JhengHei;
+    min-width: 200px;
+
+    font-size: 14px;
+    font-weight: 800;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.bounce-margin {
+    margin-top: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.col-xs-1-5,
+.col-sm-1-5,
+.col-md-1-5,
+.col-lg-1-5 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-1-5 {
+    width: 20%;
+    float: left;
+}
+
+
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.tabs {
+    position: relative;
+    margin: 3rem 0;
+    background: #f48924;
+    height: 20rem;
+}
+
+.tabs::before,
+.tabs::after {
+    content: "";
+    display: table;
+}
+
+.tabs::after {
+    clear: both;
+}
+
+.tab {
+    float: left;
+}
+
+.tab-switch {
+    display: none;
+}
+
+.tab-label {
+    position: relative;
+    display: block;
+    line-height: 2.75em;
+    height: 3em;
+    padding: 0 1.618em;
+    background: #F48924;
+    border-right: 0.125rem solid #f48942;
+    color: #fff;
+    cursor: pointer;
+    top: 0;
+    transition: all 0.25s;
+}
+
+.tab-label:hover {
+    top: -0.25rem;
+    transition: top 0.25s;
+}
+
+.tab-content {
+    position: absolute;
+    z-index: 1;
+    top: 2.75em;
+    left: 0;
+    padding: 1.618rem;
+    background: #fff;
+    color: #2c3e50;
+    border-bottom: 0.25rem solid #bdc3c7;
+    opacity: 0;
+    transition: all 0.35s;
+}
+
+.tab-switch:checked + .tab-label {
+    background: #fff;
+    color: #2c3e50;
+    border-bottom: 0;
+    border-right: 0.125rem solid #fff;
+    transition: all 0.35s;
+    z-index: 1;
+    top: -0.0625rem;
+}
+
+.tab-switch:checked + label + .tab-content {
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.35s;
+}
+
+.five-reason {
+    width: 50%;
+    height: 50%;
+}
+
+h3.five-reason-title {
+    font-size: 24px;
+}
+
+p.five-reason-info {
+    font-size: 16px;
+}
+
+.why_img {
+    width: 45%;
+    height: 45%;
+}
+
+.provides_img {
+    height: 85%;
+    width: 85%;
+}
+
+.subheader {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 1rem;
+}
+
+.stepNum {
+    font-size: 70px;
+    font-weight: 800;
+    color: #0A8EA0;
+}
+
+.partnership {
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pc-hidden{
+    display: none;
+}
+
+@media screen and (max-width:480px) {
+    
+    .title{
+        margin-top:100px; 
+    }
+    
+    header {
+        margin: auto;
+    }
+
+    header.igtlanding {
+        padding-top: 10rem;
+        background-image: url(../img/igtheader.jpg);
+        background-position: bottom;
+        background-size: 170%;
+        width: 100%;
+        height: 40%;
+    }
+
+    h1.fontsize {
+        font-size: 28px;
+        text-align: center;
+
+    }
+
+    p.fontsize {
+        font-size: 12px;
+        text-align: center;
+        letter-spacing: 2px;
+
+    }
+
+    .btn {
+        height: 5%;
+    }
+
+    .ogvinfo-title {
+        font-family: Microsoft JhengHei;
+        color: #666666;
+        font-size: 20px;
+        font-style: oblique;
+        font-weight: bold;
+        margin: 5%;
+        margin-bottom: 0;
+        margin-left: 10%;
+    }
+
+    .ogvinfo-text {
+        font-family: Microsoft JhengHei;
+        color: #666666;
+        font-size: 16px;
+        margin: 5%;
+        margin-top: 0;
+        margin-left: 10%;
+
+    }
+
+    .subheader {
+        width: 65%;
+        height: 65%;
+    }
+
+    section {
+        padding: 0rem;
+    }
+
+    .mobile-hidden {
+        display: none;
+    }
+
+    .igtinfo-text {
+        font-family: Microsoft JhengHei;
+        color: #666666;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        margin-top: 3rem;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .col-sm-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-1-5 {
+        width: 20%;
+        float: left;
+    }
+}

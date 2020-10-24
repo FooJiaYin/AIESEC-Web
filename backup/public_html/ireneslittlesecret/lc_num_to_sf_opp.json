@@ -1,0 +1,135 @@
+{
+  "1713": {
+    "lc-name":"CCU",
+    "OGX-GCDP":"0067000000iP3IB",
+    "OGX-GIP":"0067000000iP3IG",
+    "ICX-GIP":"0067000000iP3I6",
+    "ICX-GCDP":"0067000000iP3Hw"
+  },
+  "1710": {
+    "lc-name":"FCU",
+    "OGX-GCDP":"0067000000iP3Ik",
+    "OGX-GIP":"0067000000iP3Iu",
+    "ICX-GIP":"0067000000iP3IV",
+    "ICX-GCDP":"0067000000iP3Ia"
+  },
+  "1310": {
+    "lc-name":"FJU",
+    "OGX-GCDP":"0067000000iOyMl",
+    "OGX-GIP":"0067000000iOyEu",
+    "ICX-GIP":"0067000000iOyAf",
+    "ICX-GCDP":"0067000000iOyD8"
+  },
+  "1307": {
+    "lc-name":"MCU",
+    "OGX-GCDP":"0067000000iOySP",
+    "OGX-GIP":"0067000000iOyT8",
+    "ICX-GIP":"0067000000iOyR2",
+    "ICX-GCDP":"0067000000iOyPV"
+  },
+  "654": {
+    "lc-name":"NCCU",
+    "OGX-GCDP":"0067000000iOyXl",
+    "OGX-GIP":"0067000000iOyXH",
+    "ICX-GIP":"0067000000iOyWi",
+    "ICX-GCDP":"0067000000iOyVp"
+  },
+  "1711": {
+    "lc-name":"NCHU",
+    "OGX-GCDP":"0067000000iP3KW",
+    "OGX-GIP":"0067000000iP3Ji",
+    "ICX-GIP":"0067000000iP3JJ",
+    "ICX-GCDP":"0067000000iP3J9"
+  },
+  "963": {
+    "lc-name":"NCKU",
+    "OGX-GCDP":"0067000000iOyf8",
+    "OGX-GIP":"0067000000iOyh1",
+    "ICX-GIP":"0067000000iOyeF",
+    "ICX-GCDP":"0067000000iOydW"
+  },
+  "267": {
+    "lc-name":"NCTU",
+    "OGX-GCDP":"0067000000iOynT",
+    "OGX-GIP":"0067000000iOymD",
+    "ICX-GIP":"0067000000iOylK",
+    "ICX-GCDP":"0067000000iOylt"
+  },
+  "1712": {
+    "lc-name":"NCU",
+    "OGX-GCDP":"0067000000iP3V0",
+    "OGX-GIP":"0067000000iP3UC",
+    "ICX-GIP":"0067000000iP3TT",
+    "ICX-GCDP":"0067000000iP3SB"
+  },
+  "265": {
+    "lc-name":"NDHU",
+    "OGX-GCDP":"0067000000iP3Pl",
+    "OGX-GIP":"0067000000iP3Oi",
+    "ICX-GIP":"0067000000iP3MN",
+    "ICX-GCDP":"0067000000iP3NQ"
+  },
+  "612": {
+    "lc-name":"NSYSU",
+    "OGX-GCDP":"0067000000iOys5",
+    "OGX-GIP":"0067000000iOysZ",
+    "ICX-GIP":"0067000000iOyrR",
+    "ICX-GCDP":"0067000000iOyqn"
+  },
+  "268": {
+    "lc-name":"NTHU",
+    "OGX-GCDP":"0067000000iP2K8",
+    "OGX-GIP":"0067000000iP2M7",
+    "ICX-GIP":"0067000000iP2Bi",
+    "ICX-GCDP":"0067000000iP2Hs"
+  },
+  "605": {
+    "lc-name":"NTPU",
+    "OGX-GCDP":"0067000000iP3B0",
+    "OGX-GIP":"0067000000iP3AM",
+    "ICX-GIP":"0067000000iP3A7",
+    "ICX-GCDP":"0067000000iP3AC"
+  },
+  "672": {
+    "lc-name":"NTU",
+    "OGX-GCDP":"0067000000iP3BU",
+    "OGX-GIP":"0067000000iP3BP",
+    "ICX-GIP":"0067000000iP3BZ",
+    "ICX-GCDP":"0067000000iP3Bj"
+  },
+  "925": {
+    "lc-name":"SCU",
+    "OGX-GCDP":"0067000000iP3CI",
+    "OGX-GIP":"0067000000iP3CS",
+    "ICX-GIP":"0067000000iP3C8",
+    "ICX-GCDP":"0067000000iP3Bo"
+  },
+  "1504": {
+    "lc-name":"THU",
+    "OGX-GCDP":"0067000000iOtpo",
+    "OGX-GIP":"0067000000iOtqD",
+    "ICX-GIP":"0067000000iOhz3",
+    "ICX-GCDP":"0067000000iOto2"
+  },
+  "1826": {
+    "lc-name":"TKU",
+    "OGX-GCDP":"0067000000iP39s",
+    "OGX-GIP":"0067000000iP39i",
+    "ICX-GIP":"0067000000iP2Sa",
+    "ICX-GCDP":"0067000000iP2XT"
+  },
+  "264": {
+    "lc-name":"WZU",
+    "OGX-GCDP":"0067000000iP3Dp",
+    "OGX-GIP":"0067000000iP3Es",
+    "ICX-GIP":"0067000000iP3Cr",
+    "ICX-GCDP":"0067000000iP3Cm"
+  },
+  "1358": {
+    "lc-name":"YZU",
+    "OGX-GCDP":"0067000000iP3bN",
+    "OGX-GIP":"0067000000iP3a5",
+    "ICX-GIP":"0067000000iP3XL",
+    "ICX-GCDP":"0067000000iP3Yn"
+  }
+}

@@ -1,0 +1,41 @@
+body {
+    background-color: #f2f3f6;
+    font-family: Microsoft JhengHei;
+
+}
+
+table.fixed {
+    table-layout: fixed;
+    width: 100%;
+    word-break: break-all;
+}
+
+.btn-recruit {
+    width: 300px;
+
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.btn-primary {
+    background-color: #037ef3;
+    border-color: #037ef3;
+    font-family: Microsoft JhengHei;
+}
+
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover {
+    color: #fff;
+    background-color: #4ea9fd !important;
+}
+
+h3 {
+    font-family: Microsoft JhengHei;
+}

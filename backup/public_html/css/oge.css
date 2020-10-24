@@ -1,0 +1,453 @@
+/*!
+ * Start Bootstrap - Creative v5.0.1 (https://startbootstrap.com/template-overviews/creative)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
+ */
+body,
+html {
+    width: 100%;
+    height: 100%
+}
+
+.section-grbacolor {
+    background-color: #e6e6e6;
+    padding: 5%;
+}
+
+body {
+    font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif, Microsoft JhengHei
+}
+
+hr {
+    max-width: 100%;
+    border-width: 1px;
+    align-content: left;
+    border-color: rgb(240, 95, 64)
+}
+
+hr.light {
+    border-color: #fff
+}
+
+hr.gray {
+    border-color: #b3b3b3
+}
+
+a {
+    color: #f05f40;
+    -webkit-transition: all .2s;
+    transition: all .2s
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif, Microsoft JhengHei
+}
+
+
+section {
+    padding: 6rem 0
+}
+
+.section-heading {
+    margin-top: 0;
+}
+
+header.ogelanding {
+    padding-top: 10rem;
+    padding-bottom: calc(7rem - 56px);
+    background-image: url(../img/ogeheader.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+}
+
+header.masthead hr {
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+header.masthead h1 {
+    font-size: 2rem
+}
+
+header.masthead p {
+    font-weight: 300
+}
+
+@media (min-width:768px) {
+    header.masthead p {
+        font-size: 1.15rem
+    }
+}
+
+@media (min-width:992px) {
+    header.masthead {
+        height: 100vh;
+        min-height: 650px;
+        padding-top: 0;
+        padding-bottom: 0
+    }
+
+    header.masthead h1 {
+        font-size: 3rem
+    }
+}
+
+@media (min-width:1200px) {
+    header.masthead h1 {
+        font-size: 4rem
+    }
+}
+
+.service-box {
+    max-width: 400px
+}
+
+.text-primary {
+    color: #f05f40 !important
+}
+
+.btn {
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 300px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif, Microsoft JhengHei
+}
+
+.btn-xl {
+    padding: 1rem 2rem
+}
+
+.btn-primary {
+    background-color: #037ef3;
+    border-color: #037ef3;
+}
+
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover {
+    color: #fff;
+    background-color: #037ef3 !important
+}
+
+.btn-primary:active,
+.btn-primary:focus {
+    -webkit-box-shadow: 0 0 0 .2rem rgba(2, 79, 151, .7) !important;
+    box-shadow: 0 0 0 .2rem rgba(2, 79, 151, .7) !important
+}
+
+.stat-wrap {
+    background: #30c39e;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 100%;
+}
+
+.stat-number {
+    font-family: sans-serif;
+    display: inline-block;
+    font-size: 55px;
+    font-weight: 650;
+    color: white;
+}
+
+.count-font {
+    font-family: Microsoft JhengHei;
+    color: white;
+    font-size: 23px;
+    font-weight: 650;
+}
+
+.sdg-font {
+    color: #666666;
+    font-family: 微軟正黑體;
+    font-size: 18px;
+}
+
+.responsive {
+    margin-top: 75px;
+    align-items: center;
+
+}
+
+.section-title {
+    font-family: Microsoft JhengHei;
+    color: #404040;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.section-text {
+    font-family: Microsoft JhengHei;
+    color: #666666;
+    font-size: 18px;
+}
+
+.ogvinfo-title {
+    font-family: Microsoft JhengHei;
+    color: #666666;
+    font-size: 40px;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.ogvinfo-text {
+    font-family: Microsoft JhengHei;
+    color: #666666;
+    font-size: 20px;
+}
+
+.why-choose-text {
+    font-family: Microsoft JhengHei;
+    font-size: 12px;
+}
+
+.line-height-35 {
+    line-height: 35px;
+}
+
+.line-height-40 {
+    line-height: 40px;
+}
+
+.pro-title {
+    font-size: 60px;
+    color: #333333;
+}
+
+.section-grbacolor {
+    background-color: #e6e6e6
+}
+
+.section-whbacolor {
+    background-color: #ffff
+}
+
+.section-applybacolor {
+    background-color: #f2f3f6
+}
+
+.section-video {
+    padding: 0rem
+}
+
+.section-count {
+    padding: 1rem 0
+}
+
+.btn-sdg {
+    width: 700px;
+    border: 2px solid black;
+
+    background-color: white;
+    color: #037ef3;
+    border-color: #037ef3;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif, Microsoft JhengHei;
+}
+
+.btn-sdg:hover {
+    background: #037ef3;
+    color: white;
+}
+
+.header-font {
+    font-family: Microsoft JhengHei;
+    color: #f2f2f2;
+    font-weight: 800;
+}
+
+.microfont {
+    font-family: Microsoft JhengHei;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    font-family: Microsoft JhengHei;
+    min-width: 200px;
+
+    font-size: 14px;
+    font-weight: 800;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+p.header-font1 {
+    color: white;
+    font-family: Microsoft JhengHei;
+}
+
+h1.header-font2 {
+    color: white;
+    font-family: Microsoft JhengHei;
+    font-weight: 700;
+}
+
+p.header-font3 {
+    color: black;
+    font-family: Microsoft JhengHei;
+}
+
+a.header-font3 {
+    color: white;
+    font-family: Microsoft JhengHei;
+    font-weight: 1000;
+}
+
+p.contact-2 {
+    font-size: 16px;
+    margin: 10px;
+}
+
+h1.fontsize {
+    font-size: 60px;
+}
+
+p.fontsize {
+    font-size: 20px;
+}
+
+.video-container {
+
+    position: relative;
+
+    padding-bottom: 56.25%;
+
+    padding-top: 30px;
+
+    height: 0;
+
+    overflow: hidden;
+    margin: 10%;
+
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+}
+
+.howto {
+    width: 60%;
+    height: 60%;
+    margin-top: 4rem;
+}
+
+.oge_applyimg {
+    width: 60%;
+    height: 60%
+}
+
+@media screen and (max-width:480px) {
+    .howto {
+        width: 100%;
+        height: 100%;
+    }
+
+    header {
+        margin: auto;
+    }
+
+    header.ogelanding {
+        padding-top: 7rem;
+        background-image: url(../img/ogeheader.jpg);
+        background-position: top;
+        background-size: contain;
+        width: 100%;
+        height: 35%;
+    }
+
+    .header-font {
+        font-size: 10px;
+    }
+
+    h1.fontsize {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    p.fontsize {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .btn {
+        height: 5%;
+    }
+
+    .ogvinfo-title {
+        font-family: Microsoft JhengHei;
+        color: #666666;
+        font-size: 16px;
+        font-style: oblique;
+        font-weight: bold;
+        margin: 5%;
+        margin-bottom: 0;
+        margin-left: 10%;
+    }
+
+    .ogvinfo-text {
+        font-family: Microsoft JhengHei;
+        color: #666666;
+        font-size: 14px;
+        margin: 5%;
+        margin-top: 0;
+        margin-left: 10%;
+
+    }
+
+    .btn-mobile {
+        display: none;
+    }
+
+    .mobile-hidden {
+        display: none;
+    }
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400');
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.accordion a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion a:hover,
+.accordion a:hover::after {
+  cursor: pointer;
+  color: #037ef3;
+}
+
+.accordion a:hover::after {
+  border: 1px solid #037ef3;
+}
+
+.accordion a.active {
+  color: #037ef3;
+  border-bottom: 1px solid #037ef3;
+}
+
+.accordion a::after {
+  font-family: 'Ionicons';
+  content: '\f218';
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 1rem;
+  color: #037ef3;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #037ef3;
+  text-align: center;
+}
+
+.accordion a.active::after {
+  font-family: 'Ionicons';
+  content: '\f209';
+  color: #037ef3;
+  border: 1px solid #037ef3;
+}
+
+.accordion .content {
+  display: none;
+  padding: 1rem;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+}
+
+.accordion .content p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.accordion-text{
+    font-family:Microsoft JhengHei;
+}
+.section-grbacolor{
+    background-color:#e6e6e6
+}
+.faq-margin{
+    margin-left: 20%
+}
+.flaot_lf{
+    float: left;
+}
+.float_rt{
+    float: right;
+}

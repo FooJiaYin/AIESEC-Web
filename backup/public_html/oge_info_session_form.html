@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>報名海外青創說明會</title>
+
+    <!--    css for this page-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/recruitment.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon2.png" />
+</head>
+
+<body>
+    <div class="row mt-5">
+        <div class="container">
+            <div class="text-center">
+                <h3 class="m-3">報名海外青創說明會</h3>
+            </div>
+            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" name="gip_form">
+                <table class="table table-borderless fixed">
+                    <!--      中文名子、姓名-->
+                    <tr>
+                        <td> <input class="form-control" id="last_name" maxlength="80" name="last_name" required="" size="20" type="text" placeholder="中文姓氏" oninvalid="this.setCustomValidity('輸入您的中文姓氏')" oninput="setCustomValidity('')" /></td>
+                        <td><input class="form-control" id="first_name" maxlength="40" name="first_name" required="" size="20" type="text" placeholder="中文姓名" required oninvalid="this.setCustomValidity('輸入您的中文名字')" oninput="setCustomValidity('')" /></td>
+                    </tr>
+                    <!--       英文全名、性別-->
+                    <tr>
+                        <td>
+                            <input class="form-control" id="00N70000002UKfP" maxlength="255" name="00N70000002UKfP" required="" size="20" type="text" placeholder="英文全名 e.g. Winnie Zheng" required oninvalid="this.setCustomValidity('輸入您護照上的英文姓名')" oninput="setCustomValidity('')" />
+                        </td>
+                        <td>
+                            <select class="form-control" id="00N70000002U9LK" title="Gender" name="00N70000002U9LK">
+
+                                <option value="default">性別</option>
+                                <option value="Male">男性</option>
+                                <option value="Female">女性</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!--       手機號碼、電子郵件-->
+                    <tr>
+                        <td>
+                            <input class="form-control" id="phone" maxlength="40" name="phone" required="" size="20" type="text" required oninvalid="this.setCustomValidity('輸入一個有效的電話號碼, 格式：扣掉0，如960650075，共9碼')" oninput="setCustomValidity('')" pattern="(?:9)[0-9]{8}" placeholder="電話號碼 (格式：扣掉0，如960650075，共9碼)" />
+                        </td>
+                        <td>
+                            <input class="form-control" id="email" maxlength="80" name="email" required="" size="20" type="text" placeholder="電子郵件" required oninvalid="this.setCustomValidity('請輸入有效的電子郵件')" oninput="setCustomValidity('')" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" />
+                        </td>
+                    </tr>
+                    <!--                    facebook link-->
+                    <tr>
+                        <td>
+                            <input id="00N70000003CuDe" class="input form-control" type="text" name="00N70000003CuDe" maxlength="70" required oninvalid="this.setCustomValidity('輸入一個有效的Facebook 名稱, Example: 古淮語')" oninput="setCustomValidity('')" placeholder="Facebook 名稱, Example: 古淮語">
+
+                        </td>
+                    </tr>
+                    <!--       學校、學系-->
+                    <tr>
+                        <td>
+                            <select class="form-control" title="University/College" name="00N70000002UFkc" data-placeholder="搜尋學校">
+                                <option value="NCCU 國立政治大學">NCCU 國立政治大學</option>
+                                <option value="NTHU 國立清華大學">NTHU 國立清華大學</option>
+                                <option value="NTU 國立臺灣大學">NTU 國立臺灣大學</option>
+                                <option value="NTNU 國立臺灣師範大學">NTNU 國立臺灣師範大學</option>
+                                <option value="NCKU 國立成功大學">NCKU 國立成功大學</option>
+                                <option value="NCHU 國立中興大學">NCHU 國立中興大學</option>
+                                <option value="NCTU 國立交通大學">NCTU 國立交通大學</option>
+                                <option value="NCU 國立中央大學">NCU 國立中央大學</option>
+                                <option value="NSYSU 國立中山大學">NSYSU 國立中山大學</option>
+                                <option value="NTOU 國立臺灣海洋大學">NTOU 國立臺灣海洋大學</option>
+                                <option value="CCU 國立中正大學">CCU 國立中正大學</option>
+                                <option value="NKNU 國立高雄師範大學">NKNU 國立高雄師範大學</option>
+                                <option value="NCUE 國立彰化師範大學">NCUE 國立彰化師範大學</option>
+                                <option value="YM 國立陽明大學">YM 國立陽明大學</option>
+                                <option value="NTPU 國立臺北大學">NTPU 國立臺北大學</option>
+                                <option value="NCYU 國立嘉義大學">NCYU 國立嘉義大學</option>
+                                <option value="NUK 國立高雄大學">NUK 國立高雄大學</option>
+                                <option value="NDHU 國立東華大學">NDHU 國立東華大學</option>
+                                <option value="NCNU 國立暨南國際大學">NCNU 國立暨南國際大學</option>
+                                <option value="NTUST 國立臺灣科技大學">NTUST 國立臺灣科技大學</option>
+                                <option value="YUNTECH 國立雲林科技大學">YUNTECH 國立雲林科技大學</option>
+                                <option value="NPUST 國立屏東科技大學">NPUST 國立屏東科技大學</option>
+                                <option value="NTUT 國立臺北科技大學">NTUT 國立臺北科技大學</option>
+                                <option value="NKFUST 國立高雄第一科技大學">NKFUST 國立高雄第一科技大學</option>
+                                <option value="KUAS 國立高雄應用科技大學">KUAS 國立高雄應用科技大學</option>
+                                <option value="TNUA 國立臺北藝術大學">TNUA 國立臺北藝術大學</option>
+                                <option value="NTUA 國立臺灣藝術大學">NTUA 國立臺灣藝術大學</option>
+                                <option value="NTTU 國立臺東大學">NTTU 國立臺東大學</option>
+                                <option value="NIU 國立宜蘭大學">NIU 國立宜蘭大學</option>
+                                <option value="NUU 國立聯合大學">NUU 國立聯合大學</option>
+                                <option value="NFU 國立虎尾科技大學">NFU 國立虎尾科技大學</option>
+                                <option value="NKMU 國立高雄海洋科技大學">NKMU 國立高雄海洋科技大學</option>
+                                <option value="TNNUA 國立臺南藝術大學">TNNUA 國立臺南藝術大學</option>
+                                <option value="NUTN 國立臺南大學">NUTN 國立臺南大學</option>
+                                <option value="NTUE 國立臺北教育大學">NTUE 國立臺北教育大學</option>
+                                <option value="NHCUE 國立新竹教育大學">NHCUE 國立新竹教育大學</option>
+                                <option value="NTCU 國立臺中教育大學">NTCU 國立臺中教育大學</option>
+                                <option value="NPUE 國立屏東教育大學">NPUE 國立屏東教育大學</option>
+                                <option value="NPU 國立澎湖科技大學">NPU 國立澎湖科技大學</option>
+                                <option value="NCUT 國立勤益科技大學">NCUT 國立勤益科技大學</option>
+                                <option value="NTSU 國立體育大學">NTSU 國立體育大學</option>
+                                <option value="NTUNHS 國立臺北護理健康大學">NTUNHS 國立臺北護理健康大學</option>
+                                <option value="NKHC 國立高雄餐旅大學">NKHC 國立高雄餐旅大學</option>
+                                <option value="NQU 國立金門大學">NQU 國立金門大學</option>
+                                <option value="NTCPE 國立臺灣體育運動大學">NTCPE 國立臺灣體育運動大學</option>
+                                <option value="NUTC 國立臺中科技大學">NUTC 國立臺中科技大學</option>
+                                <option value="THU 東海大學">THU 東海大學</option>
+                                <option value="FJU 輔仁大學">FJU 輔仁大學</option>
+                                <option value="SCU 東吳大學">SCU 東吳大學</option>
+                                <option value="CYCU 中原大學">CYCU 中原大學</option>
+                                <option value="TKU 淡江大學">TKU 淡江大學</option>
+                                <option value="PCCU 中國文化大學">PCCU 中國文化大學</option>
+                                <option value="FCU 逢甲大學">FCU 逢甲大學</option>
+                                <option value="PU 靜宜大學">PU 靜宜大學</option>
+                                <option value="CGU 長庚大學">CGU 長庚大學</option>
+                                <option value="YZU 元智大學">YZU 元智大學</option>
+                                <option value="CHU 中華大學">CHU 中華大學</option>
+                                <option value="DYU 大葉大學">DYU 大葉大學</option>
+                                <option value="HFU 華梵大學">HFU 華梵大學</option>
+                                <option value="ISU 義守大學">ISU 義守大學</option>
+                                <option value="SHU 世新大學">SHU 世新大學</option>
+                                <option value="MCU 銘傳大學">MCU 銘傳大學</option>
+                                <option value="USC 實踐大學">USC 實踐大學</option>
+                                <option value="CYUT 朝陽科技大學">CYUT 朝陽科技大學</option>
+                                <option value="KMU 高雄醫學大學">KMU 高雄醫學大學</option>
+                                <option value="NHU 南華大學">NHU 南華大學</option>
+                                <option value="AU 真理大學">AU 真理大學</option>
+                                <option value="TTU 大同大學">TTU 大同大學</option>
+                                <option value="STUST 南臺科技大學">STUST 南臺科技大學</option>
+                                <option value="KSU 崑山科技大學">KSU 崑山科技大學</option>
+                                <option value="CHNA 嘉南藥理科技大學">CHNA 嘉南藥理科技大學</option>
+                                <option value="STU 樹德科技大學">STU 樹德科技大學</option>
+                                <option value="TCU 慈濟大學">TCU 慈濟大學</option>
+                                <option value="TMU 臺北醫學大學">TMU 臺北醫學大學</option>
+                                <option value="CSMU 中山醫學大學">CSMU 中山醫學大學</option>
+                                <option value="LHU 龍華科技大學">LHU 龍華科技大學</option>
+                                <option value="FY 輔英科技大學">FY 輔英科技大學</option>
+                                <option value="MUST 明新科技大學">MUST 明新科技大學</option>
+                                <option value="CJCU 長榮大學">CJCU 長榮大學</option>
+                                <option value="HK 弘光科技大學">HK 弘光科技大學</option>
+                                <option value="CMU 中國醫藥大學">CMU 中國醫藥大學</option>
+                                <option value="CYU 健行科技大學">CYU 健行科技大學</option>
+                                <option value="CSU 正修科技大學">CSU 正修科技大學</option>
+                                <option value="VNU 萬能科技大學">VNU 萬能科技大學</option>
+                                <option value="HCU 玄奘大學">HCU 玄奘大學</option>
+                                <option value="CTU 建國科技大學">CTU 建國科技大學</option>
+                                <option value="MCUT 明志科技大學">MCUT 明志科技大學</option>
+                                <option value="KYU 高苑科技大學">KYU 高苑科技大學</option>
+                                <option value="TAJEN 大仁科技大學">TAJEN 大仁科技大學</option>
+                                <option value="SJU 聖約翰科技大學">SJU 聖約翰科技大學</option>
+                                <option value="LTU 嶺東科技大學">LTU 嶺東科技大學</option>
+                                <option value="CUTE 中國科技大學">CUTE 中國科技大學</option>
+                                <option value="CTUST 中臺科技大學">CTUST 中臺科技大學</option>
+                                <option value="ASIA 亞洲大學">ASIA 亞洲大學</option>
+                                <option value="KNU 開南大學">KNU 開南大學</option>
+                                <option value="FGU 佛光大學">FGU 佛光大學</option>
+                                <option value="TUT 台南應用科技大學">TUT 台南應用科技大學</option>
+                                <option value="FEU 遠東科技大學">FEU 遠東科技大學</option>
+                                <option value="YPU 元培科技大學">YPU 元培科技大學</option>
+                                <option value="JUST 景文科技大學">JUST 景文科技大學</option>
+                                <option value="HWAI 中華醫事科技大學">HWAI 中華醫事科技大學</option>
+                                <option value="TNU 東南科技大學">TNU 東南科技大學</option>
+                                <option value="TAKMING 德明財經科技大學">TAKMING 德明財經科技大學</option>
+                                <option value="MDU 明道大學">MDU 明道大學</option>
+                                <option value="UKN 康寧大學">UKN 康寧大學</option>
+                                <option value="NKUT 南開科技大學">NKUT 南開科技大學</option>
+                                <option value="CUST 中華科技大學">CUST 中華科技大學</option>
+                                <option value="OCU 僑光科技大學">OCU 僑光科技大學</option>
+                                <option value="YDU 育達商業科技大學">YDU 育達商業科技大學</option>
+                                <option value="MEIHO 美和科技大學">MEIHO 美和科技大學</option>
+                                <option value="WFU 吳鳳科技大學">WFU 吳鳳科技大學</option>
+                                <option value="TWU 環球科技大學">TWU 環球科技大學</option>
+                                <option value="TSU 台灣首府大學">TSU 台灣首府大學</option>
+                                <option value="CCUT 中州科技大學">CCUT 中州科技大學</option>
+                                <option value="HUST 修平科技大學">HUST 修平科技大學</option>
+                                <option value="CGUST 長庚科技大學">CGUST 長庚科技大學</option>
+                                <option value="TSINT 台北城市科技大學">TSINT 台北城市科技大學</option>
+                                <option value="THIT 大華科技大學">THIT 大華科技大學</option>
+                                <option value="HWC 醒吾科技大學">HWC 醒吾科技大學</option>
+                                <option value="TMUE 臺北市立教育大學">TMUE 臺北市立教育大學</option>
+                                <option value="NPIC 國立屏東商業技術學院">NPIC 國立屏東商業技術學院</option>
+                                <option value="NTCB 國立臺北商業技術學院">NTCB 國立臺北商業技術學院</option>
+                                <option value="TCPA 國立臺灣戲曲學院">TCPA 國立臺灣戲曲學院</option>
+                                <option value="HKU 興國管理學院">HKU 興國管理學院</option>
+                                <option value="WTUC 文藻外語學院">WTUC 文藻外語學院</option>
+                                <option value="DAHAN 大漢技術學院">DAHAN 大漢技術學院</option>
+                                <option value="TCCN 慈濟技術學院">TCCN 慈濟技術學院</option>
+                                <option value="YTIT 永達技術學院">YTIT 永達技術學院</option>
+                                <option value="FOTECH 和春技術學院">FOTECH 和春技術學院</option>
+                                <option value="CHIHLEE 致理技術學院">CHIHLEE 致理技術學院</option>
+                                <option value="OIT 亞東技術學院">OIT 亞東技術學院</option>
+                                <option value="NANYA 桃園創新技術學院">NANYA 桃園創新技術學院</option>
+                                <option value="TOKO 稻江科技暨管理學院">TOKO 稻江科技暨管理學院</option>
+                                <option value="DLIT 德霖技術學院">DLIT 德霖技術學院</option>
+                                <option value="NJTC 南榮技術學院">NJTC 南榮技術學院</option>
+                                <option value="FIT 蘭陽技術學院">FIT 蘭陽技術學院</option>
+                                <option value="LIT 黎明技術學院">LIT 黎明技術學院</option>
+                                <option value="TF 東方設計學院">TF 東方設計學院</option>
+                                <option value="CKU 經國管理暨健康學院">CKU 經國管理暨健康學院</option>
+                                <option value="CIT 崇右技術學院">CIT 崇右技術學院</option>
+                                <option value="TTC 大同技術學院">TTC 大同技術學院</option>
+                                <option value="APIC 亞太創意技術學院">APIC 亞太創意技術學院</option>
+                                <option value="KFCDC 高鳳數位內容學院">KFCDC 高鳳數位內容學院</option>
+                                <option value="HWH 華夏技術學院">HWH 華夏技術學院</option>
+                                <option value="THT 臺灣觀光學院">THT 臺灣觀光學院</option>
+                                <option value="TCMT 台北海洋技術學院">TCMT 台北海洋技術學院</option>
+                                <option value="MMC 馬偕醫學院">MMC 馬偕醫學院</option>
+                                <option value="TPEC 臺北市立體育學院">TPEC 臺北市立體育學院</option>
+                                <option value="NTIN 國立臺南護理專科學校">NTIN 國立臺南護理專科學校</option>
+                                <option value="NTC 國立臺東專科學校">NTC 國立臺東專科學校</option>
+                                <option value="KNJC 康寧醫護暨管理專科學校">KNJC 康寧醫護暨管理專科學校</option>
+                                <option value="MKC 馬偕醫護管理專科學校">MKC 馬偕醫護管理專科學校</option>
+                                <option value="JENTE 仁德醫護管理專科學校">JENTE 仁德醫護管理專科學校</option>
+                                <option value="SZMC 樹人醫護管理專科學校">SZMC 樹人醫護管理專科學校</option>
+                                <option value="TZUHUI 慈惠醫護管理專科學校">TZUHUI 慈惠醫護管理專科學校</option>
+                                <option value="CTCN 耕莘健康管理專科學校">CTCN 耕莘健康管理專科學校</option>
+                                <option value="MHCHCM 敏惠醫護管理專科學校">MHCHCM 敏惠醫護管理專科學校</option>
+                                <option value="高美醫護管理專科學校">高美醫護管理專科學校</option>
+                                <option value="育英醫護管理專科學校">育英醫護管理專科學校</option>
+                                <option value="CJC 崇仁醫護管理專科學校">CJC 崇仁醫護管理專科學校</option>
+                                <option value="SMC 聖母醫護管理專科學校">SMC 聖母醫護管理專科學校</option>
+                                <option value="HSC 新生醫護管理專科學校">HSC 新生醫護管理專科學校</option>
+                                <option value="NOU 國立空中大學">NOU 國立空中大學</option>
+                                <option value="OUK 高雄市立空中大學">OUK 高雄市立空中大學</option>
+                                <option value="CMA 陸軍官校">CMA 陸軍官校</option>
+                                <option value="CNA 海軍官校">CNA 海軍官校</option>
+                                <option value="CAFA 空軍官校">CAFA 空軍官校</option>
+                                <option value="NDU 國防大學">NDU 國防大學</option>
+                                <option value="CPU 中央警察大學">CPU 中央警察大學</option>
+                                <option value="NDMC 國防醫學院">NDMC 國防醫學院</option>
+                                <option value="AFATS 空軍航空技術學院">AFATS 空軍航空技術學院</option>
+                                <option value="AAROC 陸軍專科學校">AAROC 陸軍專科學校</option>
+                                <option value="TPA 臺灣警察專科學校">TPA 臺灣警察專科學校</option>
+                                <option value="DDBC 法鼓佛教學院">DDBC 法鼓佛教學院</option>
+                                <option value="TBTS 基督教台灣浸會神學院">TBTS 基督教台灣浸會神學院</option>
+                                <option value="CC 臺北基督學院">CC 臺北基督學院</option>
+                            </select>
+
+                        </td>
+                        <td>
+                            <input class="form-control" id="00N70000002UFlf" maxlength="255" name="00N70000002UFlf" size="20" type="text" placeholder="大專院校主修及副修科系" required oninvalid="this.setCustomValidity('輸入您的大專院校主修及副修科系')" oninput="setCustomValidity('')" />
+                        </td>
+                    </tr>
+                    <!--       學位、入學年-->
+                    <tr>
+                        <td>
+                            <select class="form-control" id="00N70000002UFlp" title="Current/Final Degree" name="00N70000002UFlp">
+
+                                <option value="default">現在或最終學位</option>
+                                <option value="Bachelor">Bachelor 大專院校</option>
+                                <option value="Master">Master 碩士</option>
+                                <option value="Doctor">Doctor 博士</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="form-control" id="00N70000002UGB9" title="University/College/School Entrance Year" name="00N70000002UGB9">
+                                <option value="2018">入學年</option>
+                                <option value="2018">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+
+
+                            </select>
+                        </td>
+                    </tr>
+                    <!--       資訊來源、說明會場次-->
+                    <tr>
+                        <td>
+                            <select class="form-control" id="00N70000002UFlz" title="Information Channel" name="00N70000002UFlz">
+                                <option value="default">從什麼管道得知海外青創實習</option>
+                                <option value="親朋好友介紹">親朋好友介紹(包含看到朋友的PO文)</option>
+                                <option value="校園擺攤活動">校園擺攤活動</option>
+                                <option value="Facebook 粉絲專頁">Facebook 粉絲專頁</option>
+                                <option value="AIESEC官方網站">AIESEC官方網站</option>
+                                <option value="海報">海報</option>
+                                <option value="宣傳單">宣傳單</option>
+                                <option value="曾經參與過AIESEC舉辦的活動">曾經參與過AIESEC舉辦的活動</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="form-control" id="event" name="Campaign_ID" title="Campaign_ID">
+                                <option selected="selected">選擇說明會場次</option>
+
+                            </select>
+                        </td>
+                    </tr>
+
+
+
+
+                </table>
+                <div class="container">
+                    <input type="submit" id="submit_button" name="submit" clicked="false" class="send btn btn-primary btn-recruit center mt-5" value="報名說明會">
+                </div>
+
+
+                <!--    hidden value-->
+
+                <input name="oid" type="hidden" value="00D70000000IhvY" />
+                <input name="retURL" type="hidden" value="https://www.aiesec.org.tw/thanksPage.html" />
+                <input name="rating" type="hidden" value="Warm" />
+                <input name="00N70000002UFkn" type="hidden" value="OGE" />
+
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <script>
+        jQuery.get("https://auth.aiesec.org.tw/?entry=campaignInfos&type=gt", function(data) {
+
+
+
+            $.each(data, function(index, value) {
+                console.log(value);
+
+                $('#event').append(
+                    `<option value="${index}">${value}</option> <br>`
+                )
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
